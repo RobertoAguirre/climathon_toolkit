@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { BarChart3, MessageSquare, Settings, Upload, Trash2, Users, Tool, TrendingUp } from 'lucide-svelte';
+  import { BarChart3, MessageSquare, Settings, Upload, Trash2, Users, Wrench, TrendingUp } from 'lucide-svelte';
   
   interface DashboardStats {
     totalMessages: number;
@@ -151,7 +151,7 @@
               ? 'bg-white text-dark-green font-medium' 
               : 'text-grey hover:text-dark-green'}"
         >
-          <Tool class="inline mr-2" size={16} />
+          <Wrench class="inline mr-2" size={16} />
           Herramientas
         </button>
         <button
@@ -186,7 +186,7 @@
               <p class="text-grey">Mensajes Totales</p>
             </div>
             <div class="card text-center">
-              <Tool class="w-12 h-12 text-light-green mx-auto mb-4" />
+              <Wrench class="w-12 h-12 text-light-green mx-auto mb-4" />
               <h3 class="text-2xl font-bold text-dark-green mb-2">
                 {stats?.activeTools || 0}
               </h3>
