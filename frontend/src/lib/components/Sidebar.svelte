@@ -7,8 +7,8 @@
     { name: 'Inicio', href: '/', icon: Home },
     { name: 'Herramientas IA', href: '/tools', icon: Video },
     { name: 'Asistente IA', href: '/chat', icon: MessageCircle },
-    { name: 'Recursos', href: '/resources', icon: Users },
-    { name: 'Admin', href: '/admin', icon: Settings }
+    { name: 'Recursos', href: '/resources', icon: Users }
+    // { name: 'Admin', href: '/admin', icon: Settings }
   ];
   
   $: currentPath = $page.url.pathname;
@@ -16,14 +16,14 @@
 
 <nav class="sidebar">
   <!-- Logo en el sidebar -->
-  <div class="mb-8">
-    <h2 class="logo text-light-green text-xl">
-      CATAL<span class="logo-degree">1.5°</span>T
-    </h2>
-    <p class="text-light-green text-sm mt-2 opacity-80">
-      ClimateTech Toolkit
-    </p>
-  </div>
+  <!-- <div class="mb-8">
+    <img 
+      src="/src/lib/assets/Climathon_Logo_Cloud_RGB.svg" 
+      alt="Climathon Toolkit" 
+      class="sidebar-logo"
+    />
+
+  </div> -->
   
   <!-- Navegación principal -->
   <ul class="space-y-2">
@@ -44,22 +44,22 @@
   </ul>
   
   <!-- Información del proyecto -->
-  <div class="mt-8 p-4 bg-dark-purple rounded-lg">
+  <!-- <div class="mt-8 p-4 bg-dark-purple rounded-lg">
     <h3 class="text-white font-medium mb-2">Sobre el Proyecto</h3>
     <p class="text-light-green text-sm">
-      Plataforma toolkit para participantes de hackathones de ClimateTech con herramientas de IA y recursos multimedia.
+      Plataforma toolkit para participantes de climathones de ClimateTech con herramientas de IA y recursos multimedia.
     </p>
-  </div>
+  </div> -->
   
   <!-- Partners/Donors info -->
-  <div class="mt-4 p-4 bg-grey rounded-lg">
+  <!-- <div class="mt-4 p-4 bg-grey rounded-lg">
     <h4 class="text-dark-green font-medium mb-2 text-sm">Financiado por</h4>
     <div class="text-xs text-dark-green space-y-1">
       <div>• GIZ</div>
       <div>• ClimateKIC</div>
       <div>• Partners regionales</div>
     </div>
-  </div>
+  </div> -->
 </nav>
 
 <style>
@@ -68,6 +68,11 @@
     top: 0;
     height: 100vh;
     overflow-y: auto;
+  }
+  
+  .sidebar-logo {
+    height: 80px;
+    width: auto;
   }
   
   @media (max-width: 768px) {

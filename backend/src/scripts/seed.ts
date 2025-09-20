@@ -35,7 +35,7 @@ const seedDatabase = async () => {
           'Exportación a código'
         ],
         tutorial: {
-          title: 'Tutorial UIZARD para Hackathones',
+          title: 'Tutorial UIZARD para climathones',
           duration: '15 min',
           description: 'Aprende a crear prototipos profesionales en minutos'
         },

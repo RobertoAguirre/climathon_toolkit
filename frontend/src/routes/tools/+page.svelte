@@ -17,7 +17,7 @@
         'Exportación a código'
       ],
       tutorial: {
-        title: 'Tutorial UIZARD para Hackathones',
+        title: 'Tutorial UIZARD para climathones',
         duration: '15 min',
         description: 'Aprende a crear prototipos profesionales en minutos',
         videoId: 'dQw4w9WgXcQ'
@@ -109,7 +109,7 @@
 </script>
 
 <svelte:head>
-  <title>Herramientas IA - CATAL1.5°T Toolkit</title>
+  <title>Herramientas IA - Climathon Toolkit</title>
 </svelte:head>
 
 <div class="min-h-screen bg-white py-8 px-6">
@@ -117,11 +117,11 @@
     <!-- Header -->
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-5xl font-bold text-dark-green mb-4">
-        Herramientas de IA para Hackathones
+        Herramientas de IA para climathones
       </h1>
       <p class="text-xl text-dark-green max-w-3xl mx-auto">
         Domina estas herramientas gratuitas para crear prototipos, automatizaciones 
-        y aplicaciones completas durante tu hackathon de ClimateTech.
+        y aplicaciones completas durante tu climathon de ClimateTech.
       </p>
     </div>
     
@@ -140,7 +140,7 @@
             <h3 class="text-xl font-bold text-dark-green mb-2">
               {tool.name}
             </h3>
-            <p class="text-sm text-grey mb-3">
+            <p class="text-sm text-dark-green opacity-80 mb-3">
               {tool.category}
             </p>
             <div class="flex items-center justify-center space-x-2 text-xs">
@@ -169,7 +169,7 @@
               <h2 class="text-2xl font-bold text-dark-green">
                 {selectedTool.name}
               </h2>
-              <p class="text-grey">{selectedTool.category}</p>
+              <p class="text-dark-green opacity-80">{selectedTool.category}</p>
             </div>
           </div>
           
@@ -191,7 +191,7 @@
         </div>
         
         <div class="card">
-          <h3 class="font-semibold text-dark-green mb-3">Casos de uso en hackathones:</h3>
+          <h3 class="font-semibold text-dark-green mb-3">Casos de uso en climathones:</h3>
           <p class="text-sm text-dark-green">
             {selectedTool.useCase}
           </p>
@@ -264,7 +264,7 @@
     <!-- Sección de consejos -->
     <div class="mt-12 card">
       <h2 class="text-2xl font-bold text-dark-green mb-6 text-center">
-        Consejos para Hackathones
+        Consejos para climathones
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="text-center">
@@ -272,7 +272,7 @@
             <span class="text-2xl">⚡</span>
           </div>
           <h3 class="font-semibold text-dark-green mb-2">Rapidez</h3>
-          <p class="text-sm text-grey">
+          <p class="text-sm text-dark-green opacity-80">
             Usa estas herramientas para crear prototipos en minutos, no horas.
           </p>
         </div>
@@ -281,7 +281,7 @@
             <span class="text-2xl">🎯</span>
           </div>
           <h3 class="font-semibold text-dark-green mb-2">Enfoque</h3>
-          <p class="text-sm text-grey">
+          <p class="text-sm text-dark-green opacity-80">
             Concéntrate en la idea, deja que la IA maneje la implementación.
           </p>
         </div>
@@ -290,7 +290,7 @@
             <span class="text-2xl">🚀</span>
           </div>
           <h3 class="font-semibold text-dark-green mb-2">Innovación</h3>
-          <p class="text-sm text-grey">
+          <p class="text-sm text-dark-green opacity-80">
             Combina múltiples herramientas para crear soluciones únicas.
           </p>
         </div>

@@ -14,12 +14,33 @@
   <!-- Partners a la derecha -->
   <div class="flex items-center space-x-6">
     <div class="text-right">
-      <p class="text-xs text-dark-green font-medium mb-1">Implementado por</p>
-      <div class="flex items-center space-x-3">
-        <!-- Logos de partners - se pueden agregar imágenes reales -->
-        <div class="text-xs text-dark-green font-medium">GIZ</div>
-        <div class="text-xs text-dark-green font-medium">ClimateKIC</div>
-        <div class="text-xs text-dark-green font-medium">Partners</div>
+      <p class="text-xs text-dark-green font-medium mb-2">Implementado por</p>
+      <div class="flex items-center space-x-4">
+        <!-- Logos de partners -->
+        <div class="partner-logo">
+          <img 
+            src="/src/lib/assets/Climathon_Logo_Dafodil_RGB.svg" 
+            alt="GIZ" 
+            class="partner-img"
+          />
+          <span class="partner-name">GIZ</span>
+        </div>
+        <div class="partner-logo">
+          <img 
+            src="/src/lib/assets/Climathon_Logo_Cloud_RGB.svg" 
+            alt="ClimateKIC" 
+            class="partner-img"
+          />
+          <span class="partner-name">ClimateKIC</span>
+        </div>
+        <div class="partner-logo">
+          <img 
+            src="/src/lib/assets/Climathon_Square Logo_Ink on Dafodil_RGB.svg" 
+            alt="Partners" 
+            class="partner-img"
+          />
+          <span class="partner-name">Partners</span>
+        </div>
       </div>
     </div>
   </div>
@@ -30,6 +51,25 @@
     min-height: 80px; /* Altura mínima para la barra blanca */
   }
   
+  .partner-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .partner-img {
+    height: 30px;
+    width: auto;
+    margin-bottom: 4px;
+  }
+  
+  .partner-name {
+    font-size: 10px;
+    color: var(--dark-green);
+    font-weight: 500;
+  }
+  
   @media (max-width: 768px) {
     .white-bar {
       min-height: 60px;
@@ -37,6 +77,14 @@
       flex-direction: column;
       text-align: center;
       gap: 0.5rem;
+    }
+    
+    .partner-img {
+      height: 25px;
+    }
+    
+    .partner-name {
+      font-size: 9px;
     }
   }
 </style>

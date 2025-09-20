@@ -18,7 +18,7 @@
         'Exportación a código'
       ],
       tutorial: {
-        title: 'Tutorial UIZARD para Hackathones',
+        title: 'Tutorial UIZARD para climathones',
         duration: '15 min',
         description: 'Aprende a crear prototipos profesionales en minutos',
         videoId: 'dQw4w9WgXcQ' // Video de ejemplo
@@ -110,7 +110,7 @@
 </script>
 
 <svelte:head>
-  <title>CATAL1.5°T Toolkit - Bienvenida</title>
+  <title>Climathon Toolkit - Bienvenida</title>
 </svelte:head>
 
 <div class="min-h-screen bg-white">
@@ -120,10 +120,10 @@
       <div class="text-center mb-12">
         <h1 class="text-4xl md:text-6xl font-bold text-dark-green mb-6">
           Bienvenido al
-          <span class="block text-dark-purple">CATAL1.5°T Toolkit</span>
+          <span class="block text-dark-purple">Climathon Toolkit</span>
         </h1>
         <p class="text-xl text-dark-green max-w-3xl mx-auto mb-8">
-          Tu kit de herramientas digital para hackathones de ClimateTech. 
+          Tu kit de herramientas digital para climathones de ClimateTech. 
           Herramientas de IA, recursos multimedia y asistencia interactiva 
           para crear MVPs innovadores en tiempo récord.
         </p>
@@ -153,11 +153,11 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-4">
-          Herramientas de IA para Hackathones
+          Herramientas de IA para climathones
         </h2>
         <p class="text-lg text-dark-green max-w-2xl mx-auto">
           Aprende a usar estas herramientas gratuitas para diseñar, prototipar 
-          y desplegar MVPs durante tu hackathon.
+          y desplegar MVPs durante tu climathon.
         </p>
       </div>
       
@@ -179,7 +179,7 @@
               <p class="text-sm text-dark-green mb-3">
                 {tool.category}
               </p>
-              <p class="text-sm text-grey mb-4">
+              <p class="text-sm text-dark-green opacity-80 mb-4">
                 {tool.description}
               </p>
               <button 
@@ -224,7 +224,7 @@
             <h3 class="text-xl font-bold text-dark-green mb-2">
               Tutorial: {tool.name}
             </h3>
-            <p class="text-sm text-grey mb-2">
+            <p class="text-sm text-dark-green opacity-80 mb-2">
               {tool.tutorial.description}
             </p>
             <p class="text-xs text-dark-purple mb-4">
@@ -244,7 +244,7 @@
           <div class="aspect-video bg-dark-green rounded-lg mb-4 overflow-hidden">
             <iframe
               src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
-              title="Guía Completa CATAL1.5°T Toolkit"
+              title="Guía Completa Climathon Toolkit"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -254,7 +254,7 @@
           <h3 class="text-xl font-bold text-dark-green mb-2">
             Guía Completa
           </h3>
-          <p class="text-sm text-grey mb-2">
+          <p class="text-sm text-dark-green opacity-80 mb-2">
             Tutorial completo sobre cómo combinar todas las herramientas 
             para crear un MVP exitoso.
           </p>
@@ -273,10 +273,10 @@
   </section>
   
   <!-- Sección de Call to Action -->
-  <section class="py-16 px-6 bg-dark-green">
+  <!-- <section class="py-16 px-6 bg-dark-green">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-light-green mb-6">
-        ¿Listo para tu Hackathon?
+        ¿Listo para tu climathon?
       </h2>
       <p class="text-lg text-light-green mb-8">
         Únete a la comunidad de innovadores climáticos y comienza a crear 
@@ -297,7 +297,7 @@
         </button>
       </div>
     </div>
-  </section>
+  </section> -->
 </div>
 
 <style>

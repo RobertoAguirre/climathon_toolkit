@@ -1,6 +1,6 @@
 # CATAL1.5°T Toolkit
 
-Una plataforma web toolkit para participantes de hackathones de ClimateTech que proporciona herramientas de IA, recursos multimedia y asistencia interactiva.
+Una plataforma web toolkit para participantes de climathones de ClimateTech que proporciona herramientas de IA, recursos multimedia y asistencia interactiva.
 
 ## 🚀 Características Principales
 
@@ -10,7 +10,7 @@ Una plataforma web toolkit para participantes de hackathones de ClimateTech que 
 - **Layout de dos columnas** (sidebar verde oscuro + contenido blanco)
 - **Barras blancas** de 1/6 de altura en top/bottom
 
-### 🛠️ Herramientas de IA para Hackathones
+### 🛠️ Herramientas de IA para climathones
 - **UIZARD**: Prototipado rápido de UI/UX
 - **MAKE**: Automatizaciones entre aplicaciones
 - **Cursor IA**: Desarrollo con inteligencia artificial
@@ -18,7 +18,7 @@ Una plataforma web toolkit para participantes de hackathones de ClimateTech que 
 
 ### 🤖 Asistente de IA Bilingüe
 - **Chatbot integrado** con GPT/Claude
-- **Respuestas contextuales** sobre herramientas y hackathones
+- **Respuestas contextuales** sobre herramientas y climathones
 - **Soporte español/inglés**
 - **Historial de conversaciones**
 

@@ -46,10 +46,10 @@
       ],
       recentMessages: [
         { content: '¿Cómo usar UIZARD para crear prototipos?', role: 'user', timestamp: '2024-01-18T10:30:00Z' },
-        { content: 'UIZARD es perfecto para hackathones! Te permite convertir bocetos...', role: 'assistant', timestamp: '2024-01-18T10:30:15Z' },
+        { content: 'UIZARD es perfecto para climathones! Te permite convertir bocetos...', role: 'assistant', timestamp: '2024-01-18T10:30:15Z' },
         { content: '¿Qué herramientas recomiendas para mi proyecto de ClimateTech?', role: 'user', timestamp: '2024-01-18T09:45:00Z' },
         { content: 'Para proyectos de ClimateTech te recomiendo empezar con...', role: 'assistant', timestamp: '2024-01-18T09:45:20Z' },
-        { content: 'Consejos para hackathones de ClimateTech', role: 'user', timestamp: '2024-01-18T08:20:00Z' }
+        { content: 'Consejos para climathones de ClimateTech', role: 'user', timestamp: '2024-01-18T08:20:00Z' }
       ]
     };
   }
@@ -67,7 +67,7 @@
       activeSessions: 12,
       topWords: [
         { word: 'uizard', count: 15 },
-        { word: 'hackathon', count: 12 },
+        { word: 'climathon', count: 12 },
         { word: 'clima', count: 10 },
         { word: 'herramientas', count: 8 },
         { word: 'prototipo', count: 7 },
@@ -106,7 +106,7 @@
 </script>
 
 <svelte:head>
-  <title>Panel de Administración - CATAL1.5°T Toolkit</title>
+  <title>Panel de Administración - Climathon Toolkit</title>
 </svelte:head>
 
 <div class="min-h-screen bg-white py-8 px-6">
@@ -116,8 +116,8 @@
       <h1 class="text-3xl font-bold text-dark-green mb-2">
         Panel de Administración
       </h1>
-      <p class="text-grey">
-        Gestiona el contenido, analiza el uso y administra la plataforma CATAL1.5°T Toolkit
+      <p class="text-dark-green opacity-80">
+        Gestiona el contenido, analiza el uso y administra la plataforma Climathon Toolkit
       </p>
     </div>
     
@@ -129,7 +129,7 @@
           class="flex-1 py-2 px-4 rounded-md transition-colors
             {activeTab === 'dashboard' 
               ? 'bg-white text-dark-green font-medium' 
-              : 'text-grey hover:text-dark-green'}"
+              : 'text-dark-green opacity-80 hover:text-dark-green'}"
         >
           <BarChart3 class="inline mr-2" size={16} />
           Dashboard
@@ -139,7 +139,7 @@
           class="flex-1 py-2 px-4 rounded-md transition-colors
             {activeTab === 'analytics' 
               ? 'bg-white text-dark-green font-medium' 
-              : 'text-grey hover:text-dark-green'}"
+              : 'text-dark-green opacity-80 hover:text-dark-green'}"
         >
           <TrendingUp class="inline mr-2" size={16} />
           Análisis
@@ -149,7 +149,7 @@
           class="flex-1 py-2 px-4 rounded-md transition-colors
             {activeTab === 'tools' 
               ? 'bg-white text-dark-green font-medium' 
-              : 'text-grey hover:text-dark-green'}"
+              : 'text-dark-green opacity-80 hover:text-dark-green'}"
         >
           <Wrench class="inline mr-2" size={16} />
           Herramientas
@@ -159,7 +159,7 @@
           class="flex-1 py-2 px-4 rounded-md transition-colors
             {activeTab === 'settings' 
               ? 'bg-white text-dark-green font-medium' 
-              : 'text-grey hover:text-dark-green'}"
+              : 'text-dark-green opacity-80 hover:text-dark-green'}"
         >
           <Settings class="inline mr-2" size={16} />
           Configuración
@@ -183,21 +183,21 @@
               <h3 class="text-2xl font-bold text-dark-green mb-2">
                 {stats?.totalMessages || 0}
               </h3>
-              <p class="text-grey">Mensajes Totales</p>
+              <p class="text-dark-green opacity-80">Mensajes Totales</p>
             </div>
             <div class="card text-center">
               <Wrench class="w-12 h-12 text-light-green mx-auto mb-4" />
               <h3 class="text-2xl font-bold text-dark-green mb-2">
                 {stats?.activeTools || 0}
               </h3>
-              <p class="text-grey">Herramientas Activas</p>
+              <p class="text-dark-green opacity-80">Herramientas Activas</p>
             </div>
             <div class="card text-center">
               <Users class="w-12 h-12 text-light-purple mx-auto mb-4" />
               <h3 class="text-2xl font-bold text-dark-green mb-2">
                 {analytics?.activeSessions || 0}
               </h3>
-              <p class="text-grey">Sesiones Activas</p>
+              <p class="text-dark-green opacity-80">Sesiones Activas</p>
             </div>
           </div>
           
@@ -231,7 +231,7 @@
                     </div>
                     <div class="flex-1">
                       <p class="text-sm text-dark-green">{message.content}</p>
-                      <p class="text-xs text-grey mt-1">
+                      <p class="text-xs text-dark-green opacity-80 mt-1">
                         {new Date(message.timestamp).toLocaleString()}
                       </p>
                     </div>
@@ -291,7 +291,7 @@
                 <Upload class="mr-2" size={16} />
                 Poblar Base de Datos
               </button>
-              <p class="text-sm text-grey">
+              <p class="text-sm text-dark-green opacity-80">
                 Esto creará las herramientas por defecto (UIZARD, MAKE, Cursor IA, FlutterFlow) 
                 si la base de datos está vacía.
               </p>
@@ -308,7 +308,7 @@
             <div class="space-y-4">
               <div class="p-4 bg-grey rounded-lg">
                 <h4 class="font-medium text-dark-green mb-2">Limpiar Chat</h4>
-                <p class="text-sm text-grey mb-3">
+                <p class="text-sm text-dark-green opacity-80 mb-3">
                   Elimina todos los mensajes del chat. Esta acción no se puede deshacer.
                 </p>
                 <button
@@ -322,7 +322,7 @@
               
               <div class="p-4 bg-grey rounded-lg">
                 <h4 class="font-medium text-dark-green mb-2">Información del Sistema</h4>
-                <div class="text-sm text-grey space-y-1">
+                <div class="text-sm text-dark-green opacity-80 space-y-1">
                   <p>Versión: 1.0.0</p>
                   <p>Entorno: Desarrollo</p>
                   <p>Base de datos: MongoDB</p>

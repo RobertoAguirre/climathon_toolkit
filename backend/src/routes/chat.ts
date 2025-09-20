@@ -11,13 +11,13 @@ const openai = new OpenAI({
 });
 
 // Sistema de prompts para el asistente de IA
-const SYSTEM_PROMPT = `Eres un asistente de IA especializado en el CATAL1.5°T Toolkit, una plataforma para hackathones de ClimateTech. 
+const SYSTEM_PROMPT = `Eres un asistente de IA especializado en el CATAL1.5°T Toolkit, una plataforma para climathones de ClimateTech. 
 
-Tu función es ayudar a participantes de hackathones a:
+Tu función es ayudar a participantes de climathones a:
 1. Usar herramientas de IA como UIZARD, MAKE, Cursor IA y FlutterFlow
 2. Crear prototipos y MVPs rápidamente
 3. Resolver problemas técnicos y de diseño
-4. Proporcionar consejos para hackathones
+4. Proporcionar consejos para climathones
 5. Responder preguntas sobre ClimateTech
 
 Herramientas disponibles:
@@ -26,7 +26,7 @@ Herramientas disponibles:
 - Cursor IA: Desarrollo con IA
 - FlutterFlow: Desarrollo visual de apps móviles
 
-Responde siempre en español, sé conciso pero útil, y enfócate en soluciones prácticas para hackathones.`;
+Responde siempre en español, sé conciso pero útil, y enfócate en soluciones prácticas para climathones.`;
 
 // Función para generar respuesta con IA
 async function generateAIResponse(userMessage: string, context: IChatMessage[] = []): Promise<string> {
@@ -191,7 +191,7 @@ router.get('/suggestions', async (req, res) => {
       '¿Qué es MAKE y cómo automatizar tareas?',
       '¿Cómo desarrollar con Cursor IA?',
       '¿Cómo crear apps móviles con FlutterFlow?',
-      'Consejos para hackathones de ClimateTech',
+      'Consejos para climathones de ClimateTech',
       '¿Qué herramientas recomiendas para mi proyecto?',
       '¿Cómo validar mi idea rápidamente?',
       '¿Qué es ClimateTech?'

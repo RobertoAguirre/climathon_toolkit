@@ -6,9 +6,9 @@
 </script>
 
 <svelte:head>
-  <title>CATAL1.5°T Toolkit - Plataforma para Hackathones de ClimateTech</title>
-  <meta name="description" content="Herramientas de IA, recursos multimedia y asistencia interactiva para participantes de hackathones de ClimateTech" />
-  <meta name="keywords" content="climate tech, hackathon, toolkit, IA, CATAL1.5°T" />
+  <title>Climathon Toolkit - Plataforma para climathones de ClimateTech</title>
+  <meta name="description" content="Herramientas de IA, recursos multimedia y asistencia interactiva para participantes de climathones de ClimateTech" />
+  <meta name="keywords" content="climate tech, climathon, toolkit, IA, CATAL1.5°T" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 

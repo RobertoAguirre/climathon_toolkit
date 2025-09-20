@@ -1,7 +1,7 @@
 {
   "name": "catalyst-toolkit",
   "version": "1.0.0",
-  "description": "Plataforma web toolkit para hackathones de ClimateTech - CATAL1.5°T Initiative",
+  "description": "Plataforma web toolkit para climathones de ClimateTech - CATAL1.5°T Initiative",
   "private": true,
   "workspaces": [
     "frontend",
@@ -18,7 +18,7 @@
   },
   "keywords": [
     "climate-tech",
-    "hackathon",
+    "climathon",
     "toolkit",
     "ai-assistant",
     "svelte",
