@@ -41,13 +41,13 @@
           title: 'Climathons Latam 2025',
           description: 'Lista de climathones 2025 y enlaces de registro',
           type: 'Website',
-          url: 'https://climathon.climate-kic.org/catalist-climathons-latin-america'
+          url: 'https://climathon.climate-kic.org/catalist_latam/'
         },
         {
           title: 'Knowledge Hub Climathons',
           description: 'Centro de conocimiento con contenido en español',
           type: 'Website',
-          url: 'https://climathon-knowledge-hub.climate-kic.org/'
+          url: 'https://climatekic.notion.site/20babfa61ece464c94adad0fa86e49a6?v=aad3d491fb9242a5b939618938520316'
         }
       ]
     },
