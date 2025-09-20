@@ -18,7 +18,7 @@
   <!-- Logo en el sidebar -->
   <!-- <div class="mb-8">
     <img 
-      src="/src/lib/assets/Climathon_Logo_Cloud_RGB.svg" 
+      src="/logos/Climathon_Logo_Cloud_RGB.svg" 
       alt="Climathon Toolkit" 
       class="sidebar-logo"
     />

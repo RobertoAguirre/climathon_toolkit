@@ -7,7 +7,7 @@
   <!-- Logo Climathon Toolkit a la izquierda -->
   <div class="flex items-center">
     <img 
-      src="/src/lib/assets/Climathon_Logo_Ink_RGB.svg" 
+      src="/logos/Climathon_Logo_Ink_RGB.svg" 
       alt="Climathon Toolkit" 
       class="logo-img"
     />
