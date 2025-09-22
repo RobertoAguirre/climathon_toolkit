@@ -66,7 +66,7 @@
           title: 'Handbook Emprendedores Climáticos',
           description: 'Manual completo para emprendedores en ClimateTech (inglés)',
           type: 'Website',
-          url: 'https://www.climate-kic.org/entrepreneurship/handbook-for-climate-entrepreneurs/'
+          url: 'https://climatekic.notion.site/Handbook-for-Climate-Entrepreneurs-1422de9393fa80898ef9c462484c44ba'
         },
         {
           title: 'Manual Fundamentos del Emprendimiento',
@@ -78,13 +78,13 @@
           title: 'Design Thinking Tools',
           description: 'Herramientas de design thinking para climathones',
           type: 'Website',
-          url: 'https://climathon.climate-kic.org/catalist-climathons'
+          url: 'https://climatekic.notion.site/CATAL1-5-T-Climathons-a5a72156137f4419867cf2de499a802a'
         },
         {
           title: 'Herramientas de Ideación Online',
           description: 'Nuestras herramientas favoritas para ideación',
           type: 'Website',
-          url: 'https://www.boardofinnovation.com/tools/our-favorite-ideation-tools/'
+          url: 'https://www.boardofinnovation.com/staff_picks/our-favorite-ideation-tools/'
         }
       ]
     },
