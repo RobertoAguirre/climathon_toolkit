@@ -1,34 +1,17 @@
 import express from 'express';
-import OpenAI from 'openai';
+import Anthropic from '@anthropic-ai/sdk';
 import ChatMessage, { IChatMessage } from '../models/ChatMessage';
 import Tool from '../models/Tool';
+import { SYSTEM_PROMPT } from '../prompts/climathon-materials';
 
 const router = express.Router();
 
-// Inicializar OpenAI
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
+// Inicializar Anthropic Claude
+const anthropic = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY
 });
 
-// Sistema de prompts para el asistente de IA
-const SYSTEM_PROMPT = `Eres un asistente de IA especializado en el CATAL1.5°T Toolkit, una plataforma para climathones de ClimateTech. 
-
-Tu función es ayudar a participantes de climathones a:
-1. Usar herramientas de IA como UIZARD, MAKE, Cursor IA y FlutterFlow
-2. Crear prototipos y MVPs rápidamente
-3. Resolver problemas técnicos y de diseño
-4. Proporcionar consejos para climathones
-5. Responder preguntas sobre ClimateTech
-
-Herramientas disponibles:
-- UIZARD: Prototipado rápido de UI/UX
-- MAKE: Automatizaciones entre aplicaciones
-- Cursor IA: Desarrollo con IA
-- FlutterFlow: Desarrollo visual de apps móviles
-
-Responde siempre en español, sé conciso pero útil, y enfócate en soluciones prácticas para climathones.`;
-
-// Función para generar respuesta con IA
+// Función para generar respuesta con Claude
 async function generateAIResponse(userMessage: string, context: IChatMessage[] = []): Promise<string> {
   try {
     // Obtener herramientas disponibles para contexto
@@ -37,25 +20,32 @@ async function generateAIResponse(userMessage: string, context: IChatMessage[] =
       `- ${tool.name}: ${tool.description} (${tool.category})`
     ).join('\n');
 
+    // Construir el mensaje del sistema con contexto adicional
+    const systemMessage = SYSTEM_PROMPT + '\n\nHerramientas disponibles en la plataforma:\n' + toolsContext;
+
+    // Construir el historial de conversación
+    const conversationHistory = context.slice(-10).map(msg => ({
+      role: msg.role as 'user' | 'assistant',
+      content: msg.content
+    }));
+
+    // Crear el mensaje para Claude
     const messages = [
-      { role: 'system' as const, content: SYSTEM_PROMPT + '\n\nHerramientas disponibles:\n' + toolsContext },
-      ...context.slice(-10).map(msg => ({
-        role: msg.role as 'user' | 'assistant',
-        content: msg.content
-      })),
+      ...conversationHistory,
       { role: 'user' as const, content: userMessage }
     ];
 
-    const completion = await openai.chat.completions.create({
-      model: process.env.CHATBOT_MODEL || 'gpt-3.5-turbo',
-      messages,
+    const response = await anthropic.messages.create({
+      model: process.env.CHATBOT_MODEL || 'claude-3-5-sonnet-20241022',
       max_tokens: parseInt(process.env.CHATBOT_MAX_TOKENS || '1000'),
       temperature: parseFloat(process.env.CHATBOT_TEMPERATURE || '0.7'),
+      system: systemMessage,
+      messages: messages
     });
 
-    return completion.choices[0]?.message?.content || 'Lo siento, no pude generar una respuesta.';
+    return response.content[0]?.type === 'text' ? response.content[0].text : 'Lo siento, no pude generar una respuesta.';
   } catch (error) {
-    console.error('Error generando respuesta de IA:', error);
+    console.error('Error generando respuesta de Claude:', error);
     return 'Lo siento, hay un problema con el servicio de IA. Por favor, intenta de nuevo.';
   }
 }
@@ -187,14 +177,22 @@ router.delete('/history/:sessionId', async (req, res) => {
 router.get('/suggestions', async (req, res) => {
   try {
     const suggestions = [
-      '¿Cómo usar UIZARD para crear prototipos?',
+      '¿Cómo usar UIZARD para crear prototipos rápidamente?',
       '¿Qué es MAKE y cómo automatizar tareas?',
-      '¿Cómo desarrollar con Cursor IA?',
+      '¿Cómo desarrollar con Cursor IA sin código?',
       '¿Cómo crear apps móviles con FlutterFlow?',
       'Consejos para climathones de ClimateTech',
-      '¿Qué herramientas recomiendas para mi proyecto?',
-      '¿Cómo validar mi idea rápidamente?',
-      '¿Qué es ClimateTech?'
+      '¿Qué materiales recomiendas para mi proyecto climático?',
+      '¿Cómo validar mi idea de negocio climático?',
+      '¿Qué es ClimateTech y por qué es importante?',
+      '¿Cómo hacer un pitch efectivo para mi proyecto?',
+      '¿Dónde puedo encontrar información sobre cambio climático?',
+      '¿Qué herramientas de ideación puedo usar?',
+      '¿Cómo automatizar procesos con MAKE?',
+      '¿Dónde está el material sobre fundamentos del emprendimiento?',
+      '¿Cómo usar las herramientas de design thinking?',
+      '¿Dónde puedo ver el video de Impact Pitch?',
+      '¿Qué es el Knowledge Hub de Climathons?'
     ];
 
     res.json({

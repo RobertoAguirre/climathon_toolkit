@@ -37,7 +37,8 @@ const seedDatabase = async () => {
         tutorial: {
           title: 'Tutorial UIZARD para climathones',
           duration: '15 min',
-          description: 'Aprende a crear prototipos profesionales en minutos'
+          description: 'Aprende a crear prototipos profesionales en minutos',
+          videoUrl: 'https://www.youtube.com/watch?v=ejemplo-uizard'
         },
         useCase: 'Perfecto para validar ideas de UI rápidamente y presentar conceptos visuales a tu equipo.',
         difficulty: 'Fácil',
@@ -64,7 +65,8 @@ const seedDatabase = async () => {
         tutorial: {
           title: 'Automatizaciones con MAKE',
           duration: '20 min',
-          description: 'Conecta herramientas y automatiza procesos repetitivos'
+          description: 'Conecta herramientas y automatiza procesos repetitivos',
+          videoUrl: 'https://www.youtube.com/watch?v=ejemplo-make'
         },
         useCase: 'Ideal para automatizar reportes, notificaciones y flujos de datos entre aplicaciones.',
         difficulty: 'Intermedio',
@@ -91,7 +93,8 @@ const seedDatabase = async () => {
         tutorial: {
           title: 'Desarrollo con Cursor IA',
           duration: '25 min',
-          description: 'Crea aplicaciones completas usando inteligencia artificial'
+          description: 'Crea aplicaciones completas usando inteligencia artificial',
+          videoUrl: 'https://www.youtube.com/watch?v=ejemplo-cursor'
         },
         useCase: 'Revolucionario para crear MVPs funcionales sin conocimientos previos de programación.',
         difficulty: 'Fácil',
@@ -118,7 +121,8 @@ const seedDatabase = async () => {
         tutorial: {
           title: 'Apps Móviles con FlutterFlow',
           duration: '30 min',
-          description: 'Desarrolla apps móviles profesionales sin escribir código'
+          description: 'Desarrolla apps móviles profesionales sin escribir código',
+          videoUrl: 'https://www.youtube.com/watch?v=ejemplo-flutterflow'
         },
         useCase: 'Excelente para crear apps móviles nativas que funcionen en iOS y Android.',
         difficulty: 'Intermedio',

@@ -48,7 +48,7 @@ app.use('/api/admin', adminRoutes);
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
-    message: 'CATAL1.5°T Toolkit API funcionando correctamente',
+    message: 'Climathon Toolkit API funcionando correctamente',
     timestamp: new Date().toISOString(),
     version: '1.0.0'
   });
@@ -57,7 +57,7 @@ app.get('/api/health', (req, res) => {
 // Ruta raíz
 app.get('/', (req, res) => {
   res.json({
-    message: 'CATAL1.5°T Toolkit API',
+    message: 'Climathon Toolkit API',
     version: '1.0.0',
     endpoints: {
       health: '/api/health',
