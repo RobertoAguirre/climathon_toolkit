@@ -1,8 +1,12 @@
 import express from 'express';
 import Anthropic from '@anthropic-ai/sdk';
+import dotenv from 'dotenv';
 import ChatMessage, { IChatMessage } from '../models/ChatMessage';
 import Tool from '../models/Tool';
 import { SYSTEM_PROMPT } from '../prompts/climathon-materials';
+
+// Cargar variables de entorno
+dotenv.config();
 
 const router = express.Router();
 
@@ -53,6 +57,12 @@ async function generateAIResponse(userMessage: string, context: IChatMessage[] =
 // POST /api/chat/message - Enviar mensaje al chat
 router.post('/message', async (req, res) => {
   try {
+    console.log('📨 Mensaje recibido:', { 
+      content: req.body.content?.substring(0, 100) + '...', 
+      sessionId: req.body.sessionId,
+      timestamp: new Date().toISOString()
+    });
+    
     const { content, sessionId = 'default' } = req.body;
 
     if (!content || typeof content !== 'string') {
@@ -94,6 +104,12 @@ router.post('/message', async (req, res) => {
     });
 
     await assistantMessage.save();
+
+    console.log('✅ Respuesta enviada:', { 
+      messageId: assistantMessage.id,
+      contentLength: assistantMessage.content.length,
+      timestamp: new Date().toISOString()
+    });
 
     res.json({
       success: true,

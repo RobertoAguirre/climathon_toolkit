@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { Send, Bot, User, MessageCircle } from 'lucide-svelte';
+  import { apiRequest, config } from '$lib/config';
   
   interface ChatMessage {
     id: string;
@@ -45,19 +46,14 @@
     }, 100);
     
     try {
-      // Enviar mensaje al backend
-      const response = await fetch('http://localhost:3000/api/chat/message', {
+      // Enviar mensaje al backend usando la configuración centralizada
+      const data = await apiRequest(config.endpoints.chat, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
         body: JSON.stringify({
           content: userMessage.content,
-          sessionId: 'default'
+          sessionId: config.chat.defaultSessionId
         })
       });
-      
-      const data = await response.json();
       
       if (data.success && data.messages.length >= 2) {
         // Agregar la respuesta del asistente
@@ -80,10 +76,22 @@
       }
     } catch (error) {
       console.error('Error sending message:', error);
+      
+      // Determinar el tipo de error y mostrar mensaje apropiado
+      let errorMessage = 'Lo siento, hay un problema con el servicio. ';
+      
+      if (error instanceof TypeError && error.message.includes('fetch')) {
+        errorMessage += 'No se puede conectar con el servidor. Verifica que el backend esté ejecutándose.';
+      } else if (error instanceof Error && error.message.includes('HTTP error')) {
+        errorMessage += 'Error del servidor. Intenta de nuevo.';
+      } else {
+        errorMessage += 'Usando respuestas locales mientras se resuelve el problema.';
+      }
+      
       // Fallback local si no hay conexión al backend
       const assistantMessage: ChatMessage = {
         id: (Date.now() + 1).toString(),
-        content: generateResponse(userMessage.content),
+        content: errorMessage + '\n\n' + generateResponse(userMessage.content),
         role: 'assistant',
         timestamp: new Date()
       };
