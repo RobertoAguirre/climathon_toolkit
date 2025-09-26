@@ -24,6 +24,7 @@ app.use(cors({
     'http://127.0.0.1:3000',
     'https://climathon-toolkit-frontend.onrender.com',
     'https://climathon-toolkit.vercel.app',
+    'https://climathon-toolkit-frontend.vercel.app',
     'https://climathon-toolkit.netlify.app'
   ],
   credentials: true,
