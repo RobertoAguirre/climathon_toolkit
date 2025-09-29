@@ -47,7 +47,7 @@
   <!-- <div class="mt-8 p-4 bg-dark-purple rounded-lg">
     <h3 class="text-white font-medium mb-2">Sobre el Proyecto</h3>
     <p class="text-light-green text-sm">
-      Plataforma toolkit para participantes de climathones de ClimateTech con herramientas de IA y recursos multimedia.
+      Plataforma toolkit para participantes de Climathons de ClimateTech con herramientas de IA y recursos multimedia.
     </p>
   </div> -->
   

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ExternalLink, Play, Download, Star } from 'lucide-svelte';
+  import { ExternalLink, Play, Star } from 'lucide-svelte';
   
   // Datos detallados de las herramientas de IA
   const tools = [
@@ -17,14 +17,13 @@
         'Exportación a código'
       ],
       tutorial: {
-        title: 'Tutorial UIZARD para climathones',
+        title: 'Tutorial UIZARD para Climathons',
         duration: '15 min',
         description: 'Aprende a crear prototipos profesionales en minutos',
         videoId: 'dQw4w9WgXcQ'
       },
       useCase: 'Perfecto para validar ideas de UI rápidamente y presentar conceptos visuales a tu equipo.',
       difficulty: 'Fácil',
-      price: 'Gratis (plan básico)',
       website: 'https://uizard.io'
     },
     {
@@ -48,7 +47,6 @@
       },
       useCase: 'Ideal para automatizar reportes, notificaciones y flujos de datos entre aplicaciones.',
       difficulty: 'Intermedio',
-      price: 'Gratis (plan básico)',
       website: 'https://make.com'
     },
     {
@@ -72,12 +70,11 @@
       },
       useCase: 'Revolucionario para crear MVPs funcionales sin conocimientos previos de programación.',
       difficulty: 'Fácil',
-      price: 'Gratis (plan básico)',
       website: 'https://cursor.sh'
     },
     {
-      id: 'flutterflow',
-      name: 'FlutterFlow',
+      id: 'lovable',
+      name: 'Lovable',
       description: 'Herramienta de desarrollo visual sin código para apps móviles y web',
       category: 'Desarrollo Móvil',
       color: 'bg-grey',
@@ -89,15 +86,37 @@
         'Deploy directo'
       ],
       tutorial: {
-        title: 'Apps Móviles con FlutterFlow',
+        title: 'Apps Móviles con Lovable',
         duration: '30 min',
         description: 'Desarrolla apps móviles profesionales sin escribir código',
         videoId: 'dQw4w9WgXcQ'
       },
       useCase: 'Excelente para crear apps móviles nativas que funcionen en iOS y Android.',
       difficulty: 'Intermedio',
-      price: 'Gratis (plan básico)',
-      website: 'https://flutterflow.io'
+      website: 'https://lovable.dev'
+    },
+    {
+      id: 'whimsical',
+      name: 'WHIMSICAL',
+      description: 'Crea diagramas, wireframes y mapas mentales de forma colaborativa',
+      category: 'Diseño y Planificación',
+      color: 'bg-light-purple',
+      icon: '🧠',
+      features: [
+        'Diagramas de flujo interactivos',
+        'Wireframes y prototipos',
+        'Mapas mentales colaborativos',
+        'Templates para climathones'
+      ],
+      tutorial: {
+        title: 'Tutorial Whimsical para Climathons',
+        duration: '20 min',
+        description: 'Aprende a crear diagramas y wireframes colaborativos',
+        videoId: 'dQw4w9WgXcQ' // Video de ejemplo
+      },
+      useCase: 'Ideal para mapear procesos, crear wireframes y organizar ideas de forma visual durante climathones.',
+      difficulty: 'Fácil',
+      website: 'https://whimsical.com'
     }
   ];
   
@@ -117,16 +136,16 @@
     <!-- Header -->
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-5xl font-bold text-dark-green mb-4">
-        Herramientas de IA para climathones
+        Herramientas de IA para Climathons
       </h1>
       <p class="text-xl text-dark-green max-w-3xl mx-auto">
         Domina estas herramientas gratuitas para crear prototipos, automatizaciones 
-        y aplicaciones completas durante tu climathon de ClimateTech.
+        y aplicaciones completas durante tu Climathon de ClimateTech.
       </p>
     </div>
     
     <!-- Grid de herramientas -->
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-8">
       {#each tools as tool}
         <button
           on:click={() => selectTool(tool)}
@@ -146,9 +165,6 @@
             <div class="flex items-center justify-center space-x-2 text-xs">
               <span class="px-2 py-1 bg-light-green text-dark-green rounded-full">
                 {tool.difficulty}
-              </span>
-              <span class="px-2 py-1 bg-dark-purple text-white rounded-full">
-                {tool.price}
               </span>
             </div>
           </div>
@@ -191,7 +207,7 @@
         </div>
         
         <div class="card">
-          <h3 class="font-semibold text-dark-green mb-3">Casos de uso en climathones:</h3>
+          <h3 class="font-semibold text-dark-green mb-3">Casos de uso en Climathons:</h3>
           <p class="text-sm text-dark-green">
             {selectedTool.useCase}
           </p>
@@ -242,20 +258,6 @@
               <ExternalLink class="mr-2" size={16} />
               Ir a {selectedTool.name}
             </button>
-            <button 
-              class="btn-secondary w-full flex items-center justify-center"
-              on:click={() => alert('Guía descargada: ' + selectedTool.name + ' - Tutorial completo')}
-            >
-              <Download class="mr-2" size={16} />
-              Descargar Guía
-            </button>
-            <button 
-              class="bg-grey text-dark-green hover:bg-light-green w-full py-3 px-4 rounded-lg transition-colors flex items-center justify-center"
-              on:click={() => alert('Herramienta marcada como favorita: ' + selectedTool.name)}
-            >
-              <Star class="mr-2" size={16} />
-              Marcar como Favorito
-            </button>
           </div>
         </div>
       </div>
@@ -264,7 +266,7 @@
     <!-- Sección de consejos -->
     <div class="mt-12 card">
       <h2 class="text-2xl font-bold text-dark-green mb-6 text-center">
-        Consejos para climathones
+        Consejos para Climathons
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="text-center">

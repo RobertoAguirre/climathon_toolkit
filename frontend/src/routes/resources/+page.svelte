@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ExternalLink, Download, BookOpen, Video, FileText, Globe, Info, Lightbulb, Presentation, Bot } from 'lucide-svelte';
+  import { ExternalLink, BookOpen, Video, FileText, Globe, Info, Lightbulb, Presentation, Bot } from 'lucide-svelte';
   
   // Interfaces TypeScript
   interface ResourceItem {
@@ -27,19 +27,19 @@
       items: [
         {
           title: 'Sitio Web Catalist',
-          description: 'Conoce más sobre la iniciativa CATAL1.5°T y climathones',
+          description: 'Conoce más sobre la iniciativa CATAL1.5°T y Climathons',
           type: 'Website',
           url: 'https://catalist-initiative.eco/'
         },
         {
           title: 'Climathons Climate KIC',
-          description: 'Plataforma oficial de climathones a nivel mundial',
+          description: 'Plataforma oficial de Climathons a nivel mundial',
           type: 'Website',
           url: 'https://climathon.climate-kic.org/'
         },
         {
           title: 'Climathons Latam 2025',
-          description: 'Lista de climathones 2025 y enlaces de registro',
+          description: 'Lista de Climathons 2025 y enlaces de registro',
           type: 'Website',
           url: 'https://climathon.climate-kic.org/catalist_latam/'
         },
@@ -76,7 +76,7 @@
         },
         {
           title: 'Design Thinking Tools',
-          description: 'Herramientas de design thinking para climathones',
+          description: 'Herramientas de design thinking para Climathons',
           type: 'Website',
           url: 'https://climatekic.notion.site/CATAL1-5-T-Climathons-a5a72156137f4419867cf2de499a802a'
         },
@@ -85,6 +85,49 @@
           description: 'Nuestras herramientas favoritas para ideación',
           type: 'Website',
           url: 'https://www.boardofinnovation.com/staff_picks/our-favorite-ideation-tools/'
+        },
+        {
+          title: 'IAR3EES System Innovation',
+          description: 'Presentación sobre innovación sistémica para soluciones climáticas',
+          type: 'Google Slides',
+          url: 'https://docs.google.com/presentation/d/1ozH906HRU2EtSAsYw_fnqPQg7DFwujHM/edit?slide=id.p35&pli=1#slide=id.p35'
+        }
+      ]
+    },
+    {
+      category: 'Design Thinking',
+      icon: Lightbulb,
+      color: 'bg-light-purple',
+      items: [
+        {
+          title: 'Circular Idea Pitch',
+          description: 'Plantilla para presentar ideas de economía circular en Climathons',
+          type: 'PDF',
+          url: 'http://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/7872a96e-c182-4fed-b27d-60cf02cb6d66/Circular_idea_pitch.pdf?table=block&id=f8817fc7-bf53-4104-888f-9088a7bdd197&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=jn1LGuzcfSImrnquT1-WRS05VSIg-0OW747EtVl9EPI&downloadName=Circular+idea+pitch.pdf'
+        },
+        {
+          title: 'Circularity Deck',
+          description: 'Mazo de cartas con principios de economía circular para diseñar soluciones sostenibles',
+          type: 'PDF',
+          url: 'https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/bde8110a-3885-4638-a830-a34fc707d758/Circularity_Deck.pdf?table=block&id=a32f81d4-c930-4bc2-9196-0a4a266075e4&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=olvgFNji-VWe91Daf4qwc1H_p_5XkUk1IWZuJRRI0lA&downloadName=Circularity+Deck.pdf'
+        },
+        {
+          title: 'The Ecosystem View',
+          description: 'Marco para analizar ecosistemas y diseñar soluciones sistémicas',
+          type: 'PDF',
+          url: 'https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/65ba35b8-cbd4-4ec9-abe3-0a1a84152846/The_ecosystem_view.pdf?table=block&id=a8789f3b-29ce-4b62-923a-e2d0caf7042d&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=7XQxgc32DeI-EmWhmx5xKJCtZODYgqujxoRvtcynHPo&downloadName=The+ecosystem+view.pdf'
+        },
+        {
+          title: 'Business Model Canvas',
+          description: 'Plantilla para diseñar modelos de negocio sostenibles y circulares',
+          type: 'PDF',
+          url: 'http://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/8f5e7583-ee50-4684-b22d-260f8307aab4/the-business-model-canvas-1.pdf?table=block&id=25b47a96-553b-432a-ac87-9b6a72e97b45&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=625wDthDwt2GZkDTdP-aOfHW06VWBRNTV4xd0aseds8&downloadName=the-business-model-canvas-1.pdf'
+        },
+        {
+          title: 'Value Proposition Canvas',
+          description: 'Herramienta para definir y validar la propuesta de valor de tu solución climática',
+          type: 'PDF',
+          url: 'https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/35e98c5a-ed00-4f82-810d-1dde1be7ecd0/the-value-proposition-canvas-1.pdf?table=block&id=6f599da6-5cb6-4fb0-a537-077535b79cce&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=sG1MWoPqJJPeMFd1EAv8ryDbXKWjM-LBX6NS6U00vi4&downloadName=the-value-proposition-canvas-1.pdf'
         }
       ]
     },
@@ -131,10 +174,16 @@
           url: 'https://cursor.sh'
         },
         {
-          title: 'FlutterFlow - Apps Móviles',
+          title: 'Lovable - Apps Móviles',
           description: 'Herramienta de desarrollo visual sin código para apps móviles y web',
           type: 'Herramienta',
-          url: 'https://flutterflow.io'
+          url: 'https://lovable.dev'
+        },
+        {
+          title: 'Whimsical - Diagramas y Wireframes',
+          description: 'Crea diagramas, wireframes y mapas mentales de forma colaborativa',
+          type: 'Herramienta',
+          url: 'https://whimsical.com'
         }
       ]
     }
@@ -160,11 +209,10 @@
     }
   }
 
-  // Función para manejar descargas y enlaces externos
-  function handleDownload(item: ResourceItem) {
-    if (item.url && item.url !== '#') {
-      // Todos los enlaces se abren en nueva pestaña
-      window.open(item.url, '_blank');
+  // Función para abrir enlaces externos
+  function openLink(url: string) {
+    if (url && url !== '#') {
+      window.open(url, '_blank');
     } else {
       alert('Enlace no disponible aún');
     }
@@ -184,7 +232,7 @@
       </h1>
       <p class="text-dark-green opacity-80 mb-6 max-w-2xl mx-auto">
         Todo el material que necesitas para prepararte y participar exitosamente 
-        en los climathones de ClimateTech Latam 2025.
+        en los Climathons de ClimateTech Latam 2025.
       </p>
     </div>
 
@@ -210,8 +258,8 @@
             {#each category.items as item}
               <div 
                 class="p-4 bg-white border border-grey rounded-lg hover:shadow-md transition-shadow cursor-pointer"
-                on:click={() => handleDownload(item)}
-                on:keydown={(e) => e.key === 'Enter' && handleDownload(item)}
+                on:click={() => openLink(item.url)}
+                on:keydown={(e) => e.key === 'Enter' && openLink(item.url)}
                 role="button"
                 tabindex="0"
               >

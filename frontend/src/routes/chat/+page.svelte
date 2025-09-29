@@ -13,7 +13,7 @@
   let messages: ChatMessage[] = [
     {
       id: '1',
-      content: '¡Hola! Soy tu asistente de IA para el Climathon Toolkit. Puedo ayudarte con información sobre las herramientas de IA, recursos para climathones, y responder preguntas sobre ClimateTech. ¿En qué puedo ayudarte?',
+      content: '¡Hola! Soy tu asistente de IA para el Climathon Toolkit. Puedo ayudarte con información sobre las herramientas de IA, recursos para Climathons, y responder preguntas sobre ClimateTech. ¿En qué puedo ayudarte?',
       role: 'assistant',
       timestamp: new Date()
     }
@@ -114,27 +114,32 @@
     
     // Respuestas sobre UIZARD
     if (input.includes('uizard') || input.includes('diseño') || input.includes('ui') || input.includes('prototipo')) {
-      return '🎨 UIZARD es perfecto para climathones! Te permite convertir bocetos en prototipos interactivos en minutos. Puedes subir una foto de tu sketch y obtener un prototipo funcional. Es ideal para validar ideas rápidamente y presentar conceptos visuales a tu equipo. ¿Quieres que te explique el proceso paso a paso?';
+      return '🎨 UIZARD es perfecto para Climathons! Te permite convertir bocetos en prototipos interactivos en minutos. Puedes subir una foto de tu sketch y obtener un prototipo funcional. Es ideal para validar ideas rápidamente y presentar conceptos visuales a tu equipo. ¿Quieres que te explique el proceso paso a paso?';
     }
     
     // Respuestas sobre MAKE
     if (input.includes('make') || input.includes('automatización') || input.includes('zapier')) {
-      return '⚡ MAKE es genial para automatizar tareas repetitivas durante climathones. Puedes conectar aplicaciones como Telegram, Gmail, Sheets con asistentes de IA para automatizar reportes, notificaciones y flujos de datos. ¿Qué tipo de automatización necesitas para tu proyecto de ClimateTech?';
+      return '⚡ MAKE es genial para automatizar tareas repetitivas durante Climathons. Puedes conectar aplicaciones como Telegram, Gmail, Sheets con asistentes de IA para automatizar reportes, notificaciones y flujos de datos. ¿Qué tipo de automatización necesitas para tu proyecto de ClimateTech?';
     }
     
     // Respuestas sobre Cursor IA
     if (input.includes('cursor') || input.includes('programación') || input.includes('código') || input.includes('desarrollo')) {
-      return '🤖 Cursor IA es revolucionario para climathones! Puedes crear aplicaciones completas describiendo lo que quieres en lenguaje natural. Es perfecto cuando el tiempo es limitado y necesitas un MVP funcional rápido. ¿Qué tipo de aplicación quieres crear para tu solución climática?';
+      return '🤖 Cursor IA es revolucionario para Climathons! Puedes crear aplicaciones completas describiendo lo que quieres en lenguaje natural. Es perfecto cuando el tiempo es limitado y necesitas un MVP funcional rápido. ¿Qué tipo de aplicación quieres crear para tu solución climática?';
     }
     
-    // Respuestas sobre FlutterFlow
-    if (input.includes('flutterflow') || input.includes('móvil') || input.includes('app') || input.includes('mobile')) {
-      return '📱 FlutterFlow es excelente para apps móviles en climathones. Tienes una interfaz drag-and-drop que genera código Flutter real, funcionando en iOS y Android. ¿Estás pensando en crear una app móvil para tu solución de ClimateTech?';
+    // Respuestas sobre Lovable
+    if (input.includes('lovable') || input.includes('móvil') || input.includes('app') || input.includes('mobile')) {
+      return '📱 Lovable es excelente para apps móviles en Climathons. Tienes una interfaz drag-and-drop que genera código React real, funcionando en web y móvil. ¿Estás pensando en crear una app móvil para tu solución de ClimateTech?';
+    }
+    
+    // Respuestas sobre Whimsical
+    if (input.includes('whimsical') || input.includes('diagrama') || input.includes('wireframe') || input.includes('mapa mental')) {
+      return '🧠 Whimsical es perfecto para organizar ideas y crear diagramas en Climathons. Puedes crear mapas mentales, wireframes y diagramas de flujo colaborativos. Es ideal para estructurar tu proyecto y comunicar ideas visualmente. ¿Quieres aprender a crear diagramas para tu solución climática?';
     }
     
     // Respuestas sobre climathones
     if (input.includes('climathon') || input.includes('climathon') || input.includes('evento')) {
-      return '🚀 Los climathones de ClimateTech son increíbles para crear soluciones innovadoras! Te recomiendo: 1) Definir un problema climático específico, 2) Usar las herramientas de IA para prototipar rápido, 3) Enfocarte en el impacto real. ¿Tienes alguna idea específica en mente?';
+      return '🚀 Los Climathons de ClimateTech son increíbles para crear soluciones innovadoras! Te recomiendo: 1) Definir un problema climático específico, 2) Usar las herramientas de IA para prototipar rápido, 3) Enfocarte en el impacto real. ¿Tienes alguna idea específica en mente?';
     }
     
     // Respuestas sobre ClimateTech
@@ -144,16 +149,16 @@
     
     // Respuestas sobre el toolkit
     if (input.includes('toolkit') || input.includes('herramientas') || input.includes('ayuda')) {
-      return '🛠️ El Climathon Toolkit te ofrece 4 herramientas principales: UIZARD para prototipos, MAKE para automatizaciones, Cursor IA para desarrollo, y FlutterFlow para apps móviles. Todas están diseñadas para climathones y son gratuitas. ¿Con cuál te gustaría empezar?';
+      return '🛠️ El Climathon Toolkit te ofrece 5 herramientas principales: UIZARD para prototipos, MAKE para automatizaciones, Cursor IA para desarrollo, Lovable para apps móviles, y Whimsical para diagramas y wireframes. Todas están diseñadas para Climathons y son gratuitas. ¿Con cuál te gustaría empezar?';
     }
     
     // Respuestas sobre consejos
     if (input.includes('consejo') || input.includes('tip') || input.includes('ayuda') || input.includes('cómo')) {
-      return '💡 Para climathones exitosos: 1) Valida tu idea rápidamente con prototipos, 2) Usa las herramientas de IA para acelerar el desarrollo, 3) Enfócate en el impacto climático real, 4) Prepara un pitch claro. ¿En qué aspecto específico necesitas ayuda?';
+      return '💡 Para Climathons exitosos: 1) Valida tu idea rápidamente con prototipos, 2) Usa las herramientas de IA para acelerar el desarrollo, 3) Enfócate en el impacto climático real, 4) Prepara un pitch claro. ¿En qué aspecto específico necesitas ayuda?';
     }
     
     // Respuesta por defecto
-    return '🤔 Interesante pregunta! Puedo ayudarte con información sobre las herramientas de IA del toolkit (UIZARD, MAKE, Cursor IA, FlutterFlow), consejos para climathones, o temas relacionados con ClimateTech. ¿Podrías ser más específico sobre lo que necesitas?';
+    return '🤔 Interesante pregunta! Puedo ayudarte con información sobre las herramientas de IA del toolkit (UIZARD, MAKE, Cursor IA, Lovable, Whimsical), consejos para Climathons, o temas relacionados con ClimateTech. ¿Podrías ser más específico sobre lo que necesitas?';
   }
   
   // Función para manejar Enter
@@ -189,7 +194,7 @@
         </div>
       </div>
       <p class="text-dark-green max-w-2xl mx-auto">
-        Pregúntame sobre las herramientas de IA, recursos para climathones, 
+        Pregúntame sobre las herramientas de IA, recursos para Climathons, 
         o cualquier tema relacionado con ClimateTech.
       </p>
     </div>
@@ -269,9 +274,10 @@
         {#each [
           '¿Cómo usar UIZARD para prototipos?',
           '¿Qué es MAKE y automatizaciones?',
-          'Consejos para climathones de ClimateTech',
-          '¿Cómo crear apps con FlutterFlow?',
+          'Consejos para Climathons de ClimateTech',
+          '¿Cómo crear apps con Lovable?',
           '¿Qué es Cursor IA?',
+          '¿Cómo crear diagramas con Whimsical?',
           'Herramientas del toolkit'
         ] as suggestion}
           <button

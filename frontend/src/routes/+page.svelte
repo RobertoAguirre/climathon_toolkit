@@ -18,14 +18,13 @@
         'Exportación a código'
       ],
       tutorial: {
-        title: 'Tutorial UIZARD para climathones',
+        title: 'Tutorial UIZARD para Climathons',
         duration: '15 min',
         description: 'Aprende a crear prototipos profesionales en minutos',
         videoId: 'dQw4w9WgXcQ' // Video de ejemplo
       },
       useCase: 'Perfecto para validar ideas de UI rápidamente y presentar conceptos visuales a tu equipo.',
       difficulty: 'Fácil',
-      price: 'Gratis (plan básico)',
       website: 'https://uizard.io'
     },
     {
@@ -49,7 +48,6 @@
       },
       useCase: 'Ideal para automatizar reportes, notificaciones y flujos de datos entre aplicaciones.',
       difficulty: 'Intermedio',
-      price: 'Gratis (plan básico)',
       website: 'https://make.com'
     },
     {
@@ -73,12 +71,11 @@
       },
       useCase: 'Revolucionario para crear MVPs funcionales sin conocimientos previos de programación.',
       difficulty: 'Fácil',
-      price: 'Gratis (plan básico)',
       website: 'https://cursor.sh'
     },
     {
-      id: 'flutterflow',
-      name: 'FlutterFlow',
+      id: 'lovable',
+      name: 'Lovable',
       description: 'Herramienta de desarrollo visual sin código para apps móviles y web',
       category: 'Desarrollo Móvil',
       color: 'bg-grey',
@@ -90,15 +87,37 @@
         'Deploy directo'
       ],
       tutorial: {
-        title: 'Apps Móviles con FlutterFlow',
+        title: 'Apps Móviles con Lovable',
         duration: '30 min',
         description: 'Desarrolla apps móviles profesionales sin escribir código',
         videoId: 'dQw4w9WgXcQ' // Video de ejemplo
       },
       useCase: 'Excelente para crear apps móviles nativas que funcionen en iOS y Android.',
       difficulty: 'Intermedio',
-      price: 'Gratis (plan básico)',
-      website: 'https://flutterflow.io'
+      website: 'https://lovable.dev'
+    },
+    {
+      id: 'whimsical',
+      name: 'WHIMSICAL',
+      description: 'Crea diagramas, wireframes y mapas mentales de forma colaborativa',
+      category: 'Diseño y Planificación',
+      color: 'bg-light-purple',
+      icon: '🧠',
+      features: [
+        'Diagramas de flujo interactivos',
+        'Wireframes y prototipos',
+        'Mapas mentales colaborativos',
+        'Templates para climathones'
+      ],
+      tutorial: {
+        title: 'Tutorial Whimsical para Climathons',
+        duration: '20 min',
+        description: 'Aprende a crear diagramas y wireframes colaborativos',
+        videoId: 'dQw4w9WgXcQ' // Video de ejemplo
+      },
+      useCase: 'Ideal para mapear procesos, crear wireframes y organizar ideas de forma visual durante climathones.',
+      difficulty: 'Fácil',
+      website: 'https://whimsical.com'
     }
   ];
   
@@ -119,11 +138,11 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h1 class="text-4xl md:text-6xl font-bold text-dark-green mb-6">
-          Bienvenido al
-          <span class="block text-dark-purple">Climathon Toolkit</span>
+          Tu kit de herramientas digital para tu
+          <span class="block text-dark-purple">solución ClimaTech</span>
         </h1>
         <p class="text-xl text-dark-green max-w-3xl mx-auto mb-8">
-          Tu kit de herramientas digital para climathones de ClimateTech. 
+          Tu kit de herramientas digital para Climathons de ClimateTech. 
           Herramientas de IA, recursos multimedia y asistencia interactiva 
           para crear MVPs innovadores en tiempo récord.
         </p>
@@ -153,15 +172,15 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-4">
-          Herramientas de IA para climathones
+          Herramientas de IA para Climathons
         </h2>
         <p class="text-lg text-dark-green max-w-2xl mx-auto">
           Aprende a usar estas herramientas gratuitas para diseñar, prototipar 
-          y desplegar MVPs durante tu climathon.
+          y desplegar MVPs durante tu Climathon.
         </p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
         {#each aiTools as tool, index}
           <div 
             class="card hover:scale-105 transition-transform duration-300"
@@ -276,7 +295,7 @@
   <!-- <section class="py-16 px-6 bg-dark-green">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-light-green mb-6">
-        ¿Listo para tu climathon?
+        ¿Listo para tu Climathon?
       </h2>
       <p class="text-lg text-light-green mb-8">
         Únete a la comunidad de innovadores climáticos y comienza a crear 

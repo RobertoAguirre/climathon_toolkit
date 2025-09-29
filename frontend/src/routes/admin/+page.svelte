@@ -46,10 +46,10 @@
       ],
       recentMessages: [
         { content: '¿Cómo usar UIZARD para crear prototipos?', role: 'user', timestamp: '2024-01-18T10:30:00Z' },
-        { content: 'UIZARD es perfecto para climathones! Te permite convertir bocetos...', role: 'assistant', timestamp: '2024-01-18T10:30:15Z' },
+        { content: 'UIZARD es perfecto para Climathons! Te permite convertir bocetos...', role: 'assistant', timestamp: '2024-01-18T10:30:15Z' },
         { content: '¿Qué herramientas recomiendas para mi proyecto de ClimateTech?', role: 'user', timestamp: '2024-01-18T09:45:00Z' },
         { content: 'Para proyectos de ClimateTech te recomiendo empezar con...', role: 'assistant', timestamp: '2024-01-18T09:45:20Z' },
-        { content: 'Consejos para climathones de ClimateTech', role: 'user', timestamp: '2024-01-18T08:20:00Z' }
+        { content: 'Consejos para Climathons de ClimateTech', role: 'user', timestamp: '2024-01-18T08:20:00Z' }
       ]
     };
   }
@@ -67,13 +67,13 @@
       activeSessions: 12,
       topWords: [
         { word: 'uizard', count: 15 },
-        { word: 'climathon', count: 12 },
+        { word: 'Climathon', count: 12 },
         { word: 'clima', count: 10 },
         { word: 'herramientas', count: 8 },
         { word: 'prototipo', count: 7 },
         { word: 'cursor', count: 6 },
         { word: 'make', count: 5 },
-        { word: 'flutterflow', count: 4 }
+        { word: 'lovable', count: 4 }
       ],
       period: '30 días'
     };
@@ -81,7 +81,7 @@
   
   // Poblar base de datos con herramientas por defecto (simulado)
   async function seedDatabase() {
-    alert('🔄 Poblando base de datos...\n\n✅ 4 herramientas creadas correctamente:\n• UIZARD (Diseño UI/UX)\n• MAKE (Automatización)\n• Cursor IA (Desarrollo)\n• FlutterFlow (Desarrollo Móvil)\n\nEn la versión final, esto se conectará con la base de datos real.');
+    alert('🔄 Poblando base de datos...\n\n✅ 5 herramientas creadas correctamente:\n• UIZARD (Diseño UI/UX)\n• MAKE (Automatización)\n• Cursor IA (Desarrollo)\n• Lovable (Desarrollo Móvil)\n• Whimsical (Diseño y Planificación)\n\nEn la versión final, esto se conectará con la base de datos real.');
     loadDashboardStats();
   }
   
@@ -292,7 +292,7 @@
                 Poblar Base de Datos
               </button>
               <p class="text-sm text-dark-green opacity-80">
-                Esto creará las herramientas por defecto (UIZARD, MAKE, Cursor IA, FlutterFlow) 
+                Esto creará las herramientas por defecto (UIZARD, MAKE, Cursor IA, Lovable, Whimsical) 
                 si la base de datos está vacía.
               </p>
             </div>

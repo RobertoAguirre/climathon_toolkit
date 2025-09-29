@@ -6,8 +6,8 @@
 </script>
 
 <svelte:head>
-  <title>Climathon Toolkit - Plataforma para climathones de ClimateTech</title>
-  <meta name="description" content="Herramientas de IA, recursos multimedia y asistencia interactiva para participantes de climathones de ClimateTech" />
+  <title>Climathon Toolkit - Plataforma para Climathons de ClimateTech</title>
+  <meta name="description" content="Herramientas de IA, recursos multimedia y asistencia interactiva para participantes de Climathons de ClimateTech" />
   <meta name="keywords" content="climate tech, climathon, toolkit, IA, CATAL1.5°T" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
