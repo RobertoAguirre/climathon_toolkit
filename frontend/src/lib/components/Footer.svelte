@@ -6,11 +6,11 @@
 <footer class="white-bar bg-white border-t-2 border-light-green flex items-center justify-center px-6">
   <!-- Partners centrados -->
   <div class="sponsors-container">
-    <img 
-      src="/src/lib/assets/sponsors-logos.png" 
-      alt="Sponsors y Partners" 
-      class="sponsors-img"
-    />
+      <img 
+        src="/sponsors-logos.png" 
+        alt="Sponsors y Partners" 
+        class="sponsors-img"
+      />
   </div>
 </footer>
 
