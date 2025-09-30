@@ -112,7 +112,7 @@
         title: 'Tutorial Whimsical para Climathons',
         duration: '20 min',
         description: 'Aprende a crear diagramas y wireframes colaborativos',
-        videoId: 'dQw4w9WgXcQ' // Video de ejemplo
+        videoId: 'a5wBQQzFYKs'
       },
       useCase: 'Ideal para mapear procesos, crear wireframes y organizar ideas de forma visual durante climathones.',
       difficulty: 'Fácil',
@@ -218,14 +218,15 @@
       <div class="space-y-6">
         <div class="card">
           <h3 class="font-semibold text-dark-green mb-4">Tutorial</h3>
-          <div class="aspect-video bg-dark-green rounded-lg mb-4 overflow-hidden">
+          <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
             <iframe
-              src="https://www.youtube.com/embed/{selectedTool.tutorial.videoId}?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/{selectedTool.tutorial.videoId}?rel=0&modestbranding=1&showinfo=0"
               title="{selectedTool.tutorial.title}"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              class="w-full h-full"
+              class="w-full"
+              style="height: 400px;"
             ></iframe>
           </div>
           <h4 class="font-medium text-dark-green mb-2">

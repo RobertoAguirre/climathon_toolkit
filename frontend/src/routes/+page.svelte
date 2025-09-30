@@ -113,7 +113,7 @@
         title: 'Tutorial Whimsical para Climathons',
         duration: '20 min',
         description: 'Aprende a crear diagramas y wireframes colaborativos',
-        videoId: 'dQw4w9WgXcQ' // Video de ejemplo
+        videoId: 'a5wBQQzFYKs'
       },
       useCase: 'Ideal para mapear procesos, crear wireframes y organizar ideas de forma visual durante climathones.',
       difficulty: 'Fácil',
@@ -230,14 +230,15 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {#each aiTools as tool, index}
           <div class="card">
-            <div class="aspect-video bg-dark-green rounded-lg mb-4 overflow-hidden">
+            <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/{tool.tutorial.videoId}?rel=0&modestbranding=1"
+                src="https://www.youtube.com/embed/{tool.tutorial.videoId}?rel=0&modestbranding=1&showinfo=0"
                 title="{tool.tutorial.title}"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-                class="w-full h-full"
+                class="w-full"
+                style="height: 300px;"
               ></iframe>
             </div>
             <h3 class="text-xl font-bold text-dark-green mb-2">
@@ -260,14 +261,15 @@
         
         <!-- Video adicional para completar los 5 videos -->
         <div class="card">
-          <div class="aspect-video bg-dark-green rounded-lg mb-4 overflow-hidden">
+          <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&showinfo=0"
               title="Guía Completa Climathon Toolkit"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              class="w-full h-full"
+              class="w-full"
+              style="height: 300px;"
             ></iframe>
           </div>
           <h3 class="text-xl font-bold text-dark-green mb-2">
