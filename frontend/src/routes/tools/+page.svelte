@@ -17,10 +17,10 @@
         'Recursos de apoyo'
       ],
       tutorial: {
-        title: 'Introducción al Climathon Toolkit',
-        duration: '5 min',
-        description: 'Conoce las herramientas disponibles para tu proyecto Climathon',
-        videoId: 'a5wBQQzFYKs'
+        title: 'Guía de Inicio',
+        duration: 'Próximamente',
+        description: 'Video tutorial para comenzar tu proyecto Climathon',
+        videoId: ''
       },
       useCase: 'Perfecto para equipos nuevos que necesitan estructura y dirección clara desde el inicio.',
       difficulty: 'Fácil',
@@ -218,17 +218,24 @@
       <div class="space-y-6">
         <div class="card">
           <h3 class="font-semibold text-dark-green mb-4">Tutorial</h3>
-          <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
-            <iframe
-              src="https://www.youtube.com/embed/{selectedTool.tutorial.videoId}?rel=0&modestbranding=1&showinfo=0"
-              title="{selectedTool.tutorial.title}"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="w-full"
-              style="height: 400px;"
-            ></iframe>
-          </div>
+          {#if selectedTool.tutorial.videoId}
+            <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/{selectedTool.tutorial.videoId}?rel=0&modestbranding=1&showinfo=0"
+                title="{selectedTool.tutorial.title}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="w-full"
+                style="height: 400px;"
+              ></iframe>
+            </div>
+          {:else}
+            <div class="bg-light-green rounded-lg mb-4 p-8 text-center">
+              <div class="text-4xl mb-2">{selectedTool.icon}</div>
+              <p class="text-dark-green font-medium">Video tutorial próximamente</p>
+            </div>
+          {/if}
           <h4 class="font-medium text-dark-green mb-2">
             {selectedTool.tutorial.title}
           </h4>

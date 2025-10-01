@@ -18,10 +18,10 @@
         'Recursos de apoyo'
       ],
       tutorial: {
-        title: 'Introducción al Climathon Toolkit',
-        duration: '5 min',
-        description: 'Conoce las herramientas disponibles para tu proyecto Climathon',
-        videoId: 'a5wBQQzFYKs'
+        title: 'Guía de Inicio',
+        duration: 'Próximamente',
+        description: 'Video tutorial para comenzar tu proyecto Climathon',
+        videoId: ''
       },
       useCase: 'Perfecto para equipos nuevos que necesitan estructura y dirección clara desde el inicio.',
       difficulty: 'Fácil',
@@ -230,17 +230,24 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {#each aiTools as tool, index}
           <div class="card">
-            <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
-              <iframe
-                src="https://www.youtube.com/embed/{tool.tutorial.videoId}?rel=0&modestbranding=1&showinfo=0"
-                title="{tool.tutorial.title}"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                class="w-full"
-                style="height: 300px;"
-              ></iframe>
-            </div>
+            {#if tool.tutorial.videoId}
+              <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/{tool.tutorial.videoId}?rel=0&modestbranding=1&showinfo=0"
+                  title="{tool.tutorial.title}"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="w-full"
+                  style="height: 300px;"
+                ></iframe>
+              </div>
+            {:else}
+              <div class="bg-light-green rounded-lg mb-4 p-8 text-center">
+                <div class="text-4xl mb-2">{tool.icon}</div>
+                <p class="text-dark-green font-medium">Video tutorial próximamente</p>
+              </div>
+            {/if}
             <h3 class="text-xl font-bold text-dark-green mb-2">
               Tutorial: {tool.name}
             </h3>
@@ -258,37 +265,6 @@
             </button>
           </div>
         {/each}
-        
-        <!-- Video adicional para completar los 5 videos -->
-        <div class="card">
-          <div class="bg-dark-green rounded-lg mb-4 overflow-hidden">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&showinfo=0"
-              title="Guía Completa Climathon Toolkit"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="w-full"
-              style="height: 300px;"
-            ></iframe>
-          </div>
-          <h3 class="text-xl font-bold text-dark-green mb-2">
-            Guía Completa
-          </h3>
-          <p class="text-sm text-dark-green opacity-80 mb-2">
-            Tutorial completo sobre cómo combinar todas las herramientas 
-            para crear un MVP exitoso.
-          </p>
-          <p class="text-xs text-dark-purple mb-4">
-            Duración: 45 min
-          </p>
-          <button 
-            class="btn-secondary w-full"
-            on:click={() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')}
-          >
-            Ver en YouTube
-          </button>
-        </div>
       </div>
     </div>
   </section>
