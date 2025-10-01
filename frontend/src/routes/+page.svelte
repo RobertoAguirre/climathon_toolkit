@@ -21,7 +21,7 @@
         title: 'Guía de Inicio',
         duration: 'Próximamente',
         description: 'Video tutorial para comenzar tu proyecto Climathon',
-        videoId: ''
+        videoId: '7VjoH1WFgjw'
       },
       useCase: 'Perfecto para equipos nuevos que necesitan estructura y dirección clara desde el inicio.',
       difficulty: 'Fácil',
