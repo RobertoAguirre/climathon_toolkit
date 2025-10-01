@@ -116,7 +116,7 @@ ${CLIMATHON_MATERIALS}
 
 INSTRUCCIONES IMPORTANTES:
 - Responde SIEMPRE en español
-- Sé conciso pero útil
+- Sé CONCISO y directo (máximo 3-4 párrafos por respuesta)
 - Enfócate en soluciones prácticas para climathones
 - Recomienda específicamente los materiales que tenemos disponibles
 - NO inventes recursos que no existen
@@ -143,6 +143,8 @@ FORMATO DE RESPUESTAS:
 - SIEMPRE separa los enlaces con espacios y saltos de línea para mejor legibilidad
 - SIEMPRE usa bullets (-) para listas en lugar de números cuando sea apropiado
 - SIEMPRE estructura las respuestas con títulos claros y separación visual
+- MANTÉN las respuestas concisas: máximo 3-4 párrafos o secciones
+- PRIORIZA la información más relevante y práctica
 
 Cuando recomiendes materiales, usa los enlaces exactos que están disponibles arriba.
 
