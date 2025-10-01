@@ -13,7 +13,36 @@
   let messages: ChatMessage[] = [
     {
       id: '1',
-      content: '¡Hola! Soy tu asistente de IA para el Climathon Toolkit. Puedo ayudarte con información sobre las herramientas de IA, recursos para Climathons, y responder preguntas sobre ClimateTech. ¿En qué puedo ayudarte?',
+      content: `¡Hola! 👋 Bienvenido/a al asistente del **Climathon Toolkit**. Estoy aquí para ayudarte con:
+
+## 🚀 **RECURSOS PRINCIPALES:**
+• Materiales de aprendizaje especializados
+• Herramientas de IA para tu proyecto
+• Guías paso a paso para Climathons
+• Consejos prácticos de expertos
+
+## 🎯 **ÁREAS DE APOYO:**
+• Desarrollo de ideas climáticas
+• Creación de prototipos y MVPs
+• Preparación de pitch efectivo
+• Innovación sistémica y holística
+• Emprendimiento climático
+
+## 🛠️ **HERRAMIENTAS DISPONIBLES:**
+• **Como Comenzar** - Guía inicial paso a paso
+• **Whimsical** - Diseño y planificación visual
+• **UIZARD** - Prototipado rápido de UI
+• **Claude** - Investigación y análisis con IA
+• **Gamma** - Presentaciones profesionales
+
+¿En qué área específica te gustaría enfocarte? Puedes preguntarme:
+• ¿Cómo empezar en un Climathon?
+• ¿Qué herramientas usar para tu proyecto?
+• ¿Cómo preparar tu pitch?
+• ¿Cómo aplicar pensamiento sistémico?
+• ¿Dónde encontrar recursos específicos?
+
+¡Dime cómo puedo ayudarte! 🌱`,
       role: 'assistant',
       timestamp: new Date()
     }

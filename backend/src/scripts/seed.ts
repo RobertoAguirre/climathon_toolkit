@@ -24,7 +24,7 @@ const seedDatabase = async () => {
       {
         id: 'uizard',
         name: 'UIZARD',
-        description: 'Crea prototipos rápidos y completos de UI para apps web y móviles sdsdsdsdsdsdsdsdsdsdsdsdsd',
+        description: 'Crea prototipos rápidos y completos de UI para apps web y móviles',
         category: 'Diseño UI/UX',
         color: 'bg-blue',
         icon: '🎨',

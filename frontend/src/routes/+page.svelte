@@ -67,7 +67,7 @@
         title: 'Tutorial UIZARD para Climathons',
         duration: '15 min',
         description: 'Aprende a crear prototipos profesionales en minutos',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'wHYcHmcTP0I'
       },
       useCase: 'Perfecto para validar ideas de UI rápidamente y presentar conceptos visuales a tu equipo.',
       difficulty: 'Fácil',
