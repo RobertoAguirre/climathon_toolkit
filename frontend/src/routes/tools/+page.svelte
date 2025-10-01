@@ -17,9 +17,9 @@
         'Recursos de apoyo'
       ],
       tutorial: {
-        title: 'Guía Completa para Comenzar tu Climathon',
-        duration: '10 min',
-        description: 'Aprende la metodología completa para desarrollar tu proyecto',
+        title: 'Introducción al Climathon Toolkit',
+        duration: '5 min',
+        description: 'Conoce las herramientas disponibles para tu proyecto Climathon',
         videoId: 'dQw4w9WgXcQ'
       },
       useCase: 'Perfecto para equipos nuevos que necesitan estructura y dirección clara desde el inicio.',
@@ -112,7 +112,7 @@
         title: 'Tutorial Gamma para Climathons',
         duration: '18 min',
         description: 'Aprende a crear presentaciones impactantes para tu pitch',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: '4tsm2Hg6WaQ'
       },
       useCase: 'Ideal para crear presentaciones finales, pitch decks y documentos de presentación profesional.',
       difficulty: 'Fácil',
