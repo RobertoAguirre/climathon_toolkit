@@ -21,7 +21,7 @@
         title: 'Introducción al Climathon Toolkit',
         duration: '5 min',
         description: 'Conoce las herramientas disponibles para tu proyecto Climathon',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'a5wBQQzFYKs'
       },
       useCase: 'Perfecto para equipos nuevos que necesitan estructura y dirección clara desde el inicio.',
       difficulty: 'Fácil',
