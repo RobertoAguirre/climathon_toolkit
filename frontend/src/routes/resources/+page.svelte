@@ -156,34 +156,34 @@
       color: 'bg-grey',
       items: [
         {
-          title: 'UIZARD - Prototipado',
-          description: 'Crea prototipos rápidos y completos de UI para apps web y móviles',
+          title: 'Como Comenzar - Guía Inicial',
+          description: 'Guía paso a paso para iniciar tu proyecto Climathon desde cero',
           type: 'Herramienta',
-          url: 'https://uizard.io'
-        },
-        {
-          title: 'MAKE - Automatización',
-          description: 'Construye automatizaciones entre diferentes herramientas y aplicaciones',
-          type: 'Herramienta',
-          url: 'https://make.com'
-        },
-        {
-          title: 'Cursor IA - Desarrollo',
-          description: 'Herramienta de programación centrada en IA para crear software sin código',
-          type: 'Herramienta',
-          url: 'https://cursor.sh'
-        },
-        {
-          title: 'Lovable - Apps Móviles',
-          description: 'Herramienta de desarrollo visual sin código para apps móviles y web',
-          type: 'Herramienta',
-          url: 'https://lovable.dev'
+          url: '#'
         },
         {
           title: 'Whimsical - Diagramas y Wireframes',
           description: 'Crea diagramas, wireframes y mapas mentales de forma colaborativa',
           type: 'Herramienta',
           url: 'https://whimsical.com'
+        },
+        {
+          title: 'UIZARD - Prototipado',
+          description: 'Crea prototipos rápidos y completos de UI para apps web y móviles',
+          type: 'Herramienta',
+          url: 'https://uizard.io'
+        },
+        {
+          title: 'Claude - Inteligencia Artificial',
+          description: 'Asistente de IA avanzado para investigación, análisis y generación de contenido',
+          type: 'Herramienta',
+          url: 'https://claude.ai'
+        },
+        {
+          title: 'Gamma - Presentaciones',
+          description: 'Crea presentaciones profesionales y documentos interactivos con IA',
+          type: 'Herramienta',
+          url: 'https://gamma.app'
         }
       ]
     }

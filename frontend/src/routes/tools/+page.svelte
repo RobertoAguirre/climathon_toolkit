@@ -4,96 +4,27 @@
   // Datos detallados de las herramientas de IA
   const tools = [
     {
-      id: 'uizard',
-      name: 'UIZARD',
-      description: 'Crea prototipos rápidos y completos de UI para apps web y móviles',
-      category: 'Diseño UI/UX',
-      color: 'bg-blue',
-      icon: '🎨',
-      features: [
-        'Conversión de bocetos a prototipos',
-        'Templates predefinidos',
-        'Colaboración en tiempo real',
-        'Exportación a código'
-      ],
-      tutorial: {
-        title: 'Tutorial UIZARD para Climathons',
-        duration: '15 min',
-        description: 'Aprende a crear prototipos profesionales en minutos',
-        videoId: 'dQw4w9WgXcQ'
-      },
-      useCase: 'Perfecto para validar ideas de UI rápidamente y presentar conceptos visuales a tu equipo.',
-      difficulty: 'Fácil',
-      website: 'https://uizard.io'
-    },
-    {
-      id: 'make',
-      name: 'MAKE',
-      description: 'Construye automatizaciones entre diferentes herramientas y aplicaciones',
-      category: 'Automatización',
-      color: 'bg-light-purple',
-      icon: '⚡',
-      features: [
-        'Integración con 1000+ apps',
-        'Flujos de trabajo visuales',
-        'Triggers automáticos',
-        'Análisis de datos'
-      ],
-      tutorial: {
-        title: 'Automatizaciones con MAKE',
-        duration: '20 min',
-        description: 'Conecta herramientas y automatiza procesos repetitivos',
-        videoId: 'dQw4w9WgXcQ'
-      },
-      useCase: 'Ideal para automatizar reportes, notificaciones y flujos de datos entre aplicaciones.',
-      difficulty: 'Intermedio',
-      website: 'https://make.com'
-    },
-    {
-      id: 'cursor',
-      name: 'Cursor IA',
-      description: 'Herramienta de programación centrada en IA para crear software sin código',
-      category: 'Desarrollo',
+      id: 'como-comenzar',
+      name: 'COMO COMENZAR',
+      description: 'Guía paso a paso para iniciar tu proyecto Climathon desde cero',
+      category: 'Guía Inicial',
       color: 'bg-light-green',
-      icon: '🤖',
+      icon: '🚀',
       features: [
-        'Programación con IA',
-        'Generación de código',
-        'Debugging automático',
-        'Múltiples lenguajes'
+        'Metodología paso a paso',
+        'Plantillas de trabajo',
+        'Checklist de actividades',
+        'Recursos de apoyo'
       ],
       tutorial: {
-        title: 'Desarrollo con Cursor IA',
-        duration: '25 min',
-        description: 'Crea aplicaciones completas usando inteligencia artificial',
+        title: 'Guía Completa para Comenzar tu Climathon',
+        duration: '10 min',
+        description: 'Aprende la metodología completa para desarrollar tu proyecto',
         videoId: 'dQw4w9WgXcQ'
       },
-      useCase: 'Revolucionario para crear MVPs funcionales sin conocimientos previos de programación.',
+      useCase: 'Perfecto para equipos nuevos que necesitan estructura y dirección clara desde el inicio.',
       difficulty: 'Fácil',
-      website: 'https://cursor.sh'
-    },
-    {
-      id: 'lovable',
-      name: 'Lovable',
-      description: 'Herramienta de desarrollo visual sin código para apps móviles y web',
-      category: 'Desarrollo Móvil',
-      color: 'bg-grey',
-      icon: '📱',
-      features: [
-        'Drag & drop visual',
-        'Código Flutter real',
-        'Integración con APIs',
-        'Deploy directo'
-      ],
-      tutorial: {
-        title: 'Apps Móviles con Lovable',
-        duration: '30 min',
-        description: 'Desarrolla apps móviles profesionales sin escribir código',
-        videoId: 'dQw4w9WgXcQ'
-      },
-      useCase: 'Excelente para crear apps móviles nativas que funcionen en iOS y Android.',
-      difficulty: 'Intermedio',
-      website: 'https://lovable.dev'
+      website: '#'
     },
     {
       id: 'whimsical',
@@ -117,6 +48,75 @@
       useCase: 'Ideal para mapear procesos, crear wireframes y organizar ideas de forma visual durante climathones.',
       difficulty: 'Fácil',
       website: 'https://whimsical.com'
+    },
+    {
+      id: 'uizard',
+      name: 'UIZARD',
+      description: 'Crea prototipos rápidos y completos de UI para apps web y móviles de forma profesional',
+      category: 'Diseño UI/UX',
+      color: 'bg-blue',
+      icon: '🎨',
+      features: [
+        'Conversión de bocetos a prototipos',
+        'Templates predefinidos',
+        'Colaboración en tiempo real',
+        'Exportación a código'
+      ],
+      tutorial: {
+        title: 'Tutorial UIZARD para Climathons',
+        duration: '15 min',
+        description: 'Aprende a crear prototipos profesionales en minutos',
+        videoId: 'dQw4w9WgXcQ'
+      },
+      useCase: 'Perfecto para validar ideas de UI rápidamente y presentar conceptos visuales a tu equipo.',
+      difficulty: 'Fácil',
+      website: 'https://uizard.io'
+    },
+    {
+      id: 'claude',
+      name: 'CLAUDE',
+      description: 'Asistente de IA para investigación, análisis y creación de contenido',
+      category: 'Inteligencia Artificial',
+      color: 'bg-grey',
+      icon: '🤖',
+      features: [
+        'Análisis de datos climáticos',
+        'Generación de contenido',
+        'Investigación automatizada',
+        'Soporte en múltiples idiomas'
+      ],
+      tutorial: {
+        title: 'Tutorial Claude para Climathons',
+        duration: '12 min',
+        description: 'Aprende a usar Claude para investigación y análisis',
+        videoId: 'dQw4w9WgXcQ'
+      },
+      useCase: 'Excelente para investigación rápida, análisis de datos y generación de contenido para tu proyecto.',
+      difficulty: 'Fácil',
+      website: 'https://claude.ai'
+    },
+    {
+      id: 'gamma',
+      name: 'GAMMA',
+      description: 'Crea presentaciones profesionales y documentos con IA de forma rápida y eficiente',
+      category: 'Presentaciones',
+      color: 'bg-light-purple',
+      icon: '📊',
+      features: [
+        'Generación automática de presentaciones',
+        'Templates profesionales',
+        'Colaboración en tiempo real',
+        'Exportación múltiple'
+      ],
+      tutorial: {
+        title: 'Tutorial Gamma para Climathons',
+        duration: '18 min',
+        description: 'Aprende a crear presentaciones impactantes para tu pitch',
+        videoId: 'dQw4w9WgXcQ'
+      },
+      useCase: 'Ideal para crear presentaciones finales, pitch decks y documentos de presentación profesional.',
+      difficulty: 'Fácil',
+      website: 'https://gamma.app'
     }
   ];
   

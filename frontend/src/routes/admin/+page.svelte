@@ -30,13 +30,14 @@
     
     stats = {
       totalMessages: 127,
-      totalTools: 4,
-      activeTools: 4,
+      totalTools: 5,
+      activeTools: 5,
       toolsByCategory: [
+        { _id: 'Guía Inicial', count: 1 },
+        { _id: 'Diseño y Planificación', count: 1 },
         { _id: 'Diseño UI/UX', count: 1 },
-        { _id: 'Automatización', count: 1 },
-        { _id: 'Desarrollo', count: 1 },
-        { _id: 'Desarrollo Móvil', count: 1 }
+        { _id: 'Inteligencia Artificial', count: 1 },
+        { _id: 'Presentaciones', count: 1 }
       ],
       messagesByDay: [
         { _id: { year: 2024, month: 1, day: 15 }, count: 23 },
@@ -45,8 +46,8 @@
         { _id: { year: 2024, month: 1, day: 18 }, count: 45 }
       ],
       recentMessages: [
-        { content: '¿Cómo usar UIZARD para crear prototipos?', role: 'user', timestamp: '2024-01-18T10:30:00Z' },
-        { content: 'UIZARD es perfecto para Climathons! Te permite convertir bocetos...', role: 'assistant', timestamp: '2024-01-18T10:30:15Z' },
+        { content: '¿Cómo usar Whimsical para crear diagramas?', role: 'user', timestamp: '2024-01-18T10:30:00Z' },
+        { content: 'Whimsical es perfecto para Climathons! Te permite crear diagramas...', role: 'assistant', timestamp: '2024-01-18T10:30:15Z' },
         { content: '¿Qué herramientas recomiendas para mi proyecto de ClimateTech?', role: 'user', timestamp: '2024-01-18T09:45:00Z' },
         { content: 'Para proyectos de ClimateTech te recomiendo empezar con...', role: 'assistant', timestamp: '2024-01-18T09:45:20Z' },
         { content: 'Consejos para Climathons de ClimateTech', role: 'user', timestamp: '2024-01-18T08:20:00Z' }
@@ -71,9 +72,9 @@
         { word: 'clima', count: 10 },
         { word: 'herramientas', count: 8 },
         { word: 'prototipo', count: 7 },
-        { word: 'cursor', count: 6 },
-        { word: 'make', count: 5 },
-        { word: 'lovable', count: 4 }
+        { word: 'claude', count: 6 },
+        { word: 'gamma', count: 5 },
+        { word: 'whimsical', count: 4 }
       ],
       period: '30 días'
     };
@@ -81,7 +82,7 @@
   
   // Poblar base de datos con herramientas por defecto (simulado)
   async function seedDatabase() {
-    alert('🔄 Poblando base de datos...\n\n✅ 5 herramientas creadas correctamente:\n• UIZARD (Diseño UI/UX)\n• MAKE (Automatización)\n• Cursor IA (Desarrollo)\n• Lovable (Desarrollo Móvil)\n• Whimsical (Diseño y Planificación)\n\nEn la versión final, esto se conectará con la base de datos real.');
+    alert('🔄 Poblando base de datos...\n\n✅ 5 herramientas creadas correctamente:\n• Como Comenzar (Guía Inicial)\n• Whimsical (Diseño y Planificación)\n• UIZARD (Diseño UI/UX)\n• Claude (Inteligencia Artificial)\n• Gamma (Presentaciones)\n\nEn la versión final, esto se conectará con la base de datos real.');
     loadDashboardStats();
   }
   
@@ -292,7 +293,7 @@
                 Poblar Base de Datos
               </button>
               <p class="text-sm text-dark-green opacity-80">
-                Esto creará las herramientas por defecto (UIZARD, MAKE, Cursor IA, Lovable, Whimsical) 
+                Esto creará las herramientas por defecto (Como Comenzar, Whimsical, UIZARD, Claude, Gamma) 
                 si la base de datos está vacía.
               </p>
             </div>

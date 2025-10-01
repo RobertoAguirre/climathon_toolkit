@@ -117,19 +117,19 @@
       return '🎨 UIZARD es perfecto para Climathons! Te permite convertir bocetos en prototipos interactivos en minutos. Puedes subir una foto de tu sketch y obtener un prototipo funcional. Es ideal para validar ideas rápidamente y presentar conceptos visuales a tu equipo. ¿Quieres que te explique el proceso paso a paso?';
     }
     
-    // Respuestas sobre MAKE
-    if (input.includes('make') || input.includes('automatización') || input.includes('zapier')) {
-      return '⚡ MAKE es genial para automatizar tareas repetitivas durante Climathons. Puedes conectar aplicaciones como Telegram, Gmail, Sheets con asistentes de IA para automatizar reportes, notificaciones y flujos de datos. ¿Qué tipo de automatización necesitas para tu proyecto de ClimateTech?';
+    // Respuestas sobre Claude
+    if (input.includes('claude') || input.includes('investigación') || input.includes('análisis') || input.includes('contenido')) {
+      return '🤖 Claude es excelente para investigación y análisis durante Climathons. Puede ayudarte a analizar datos climáticos, generar contenido para tu proyecto, y realizar investigaciones automatizadas. ¿Qué tipo de investigación necesitas para tu solución de ClimateTech?';
     }
     
-    // Respuestas sobre Cursor IA
-    if (input.includes('cursor') || input.includes('programación') || input.includes('código') || input.includes('desarrollo')) {
-      return '🤖 Cursor IA es revolucionario para Climathons! Puedes crear aplicaciones completas describiendo lo que quieres en lenguaje natural. Es perfecto cuando el tiempo es limitado y necesitas un MVP funcional rápido. ¿Qué tipo de aplicación quieres crear para tu solución climática?';
+    // Respuestas sobre Gamma
+    if (input.includes('gamma') || input.includes('presentación') || input.includes('pitch') || input.includes('slides')) {
+      return '📊 Gamma es perfecto para crear presentaciones profesionales en Climathons. Puedes generar automáticamente pitch decks, presentaciones interactivas y documentos profesionales. ¿Necesitas ayuda creando una presentación para tu proyecto de ClimateTech?';
     }
     
-    // Respuestas sobre Lovable
-    if (input.includes('lovable') || input.includes('móvil') || input.includes('app') || input.includes('mobile')) {
-      return '📱 Lovable es excelente para apps móviles en Climathons. Tienes una interfaz drag-and-drop que genera código React real, funcionando en web y móvil. ¿Estás pensando en crear una app móvil para tu solución de ClimateTech?';
+    // Respuestas sobre Como Comenzar
+    if (input.includes('comenzar') || input.includes('inicio') || input.includes('empezar') || input.includes('metodología')) {
+      return '🚀 Como Comenzar te guía paso a paso desde el inicio de tu Climathon. Incluye metodología estructurada, plantillas de trabajo, checklist de actividades y recursos de apoyo. ¿Es tu primer Climathon o necesitas refrescar la metodología?';
     }
     
     // Respuestas sobre Whimsical
@@ -149,7 +149,7 @@
     
     // Respuestas sobre el toolkit
     if (input.includes('toolkit') || input.includes('herramientas') || input.includes('ayuda')) {
-      return '🛠️ El Climathon Toolkit te ofrece 5 herramientas principales: UIZARD para prototipos, MAKE para automatizaciones, Cursor IA para desarrollo, Lovable para apps móviles, y Whimsical para diagramas y wireframes. Todas están diseñadas para Climathons y son gratuitas. ¿Con cuál te gustaría empezar?';
+      return '🛠️ El Climathon Toolkit te ofrece 5 herramientas principales: Como Comenzar para guía inicial, Whimsical para diagramas y wireframes, UIZARD para prototipos, Claude para investigación y análisis, y Gamma para presentaciones. Todas están diseñadas para Climathons y son gratuitas. ¿Con cuál te gustaría empezar?';
     }
     
     // Respuestas sobre consejos
@@ -158,7 +158,7 @@
     }
     
     // Respuesta por defecto
-    return '🤔 Interesante pregunta! Puedo ayudarte con información sobre las herramientas de IA del toolkit (UIZARD, MAKE, Cursor IA, Lovable, Whimsical), consejos para Climathons, o temas relacionados con ClimateTech. ¿Podrías ser más específico sobre lo que necesitas?';
+    return '🤔 Interesante pregunta! Puedo ayudarte con información sobre las herramientas de IA del toolkit (Como Comenzar, Whimsical, UIZARD, Claude, Gamma), consejos para Climathons, o temas relacionados con ClimateTech. ¿Podrías ser más específico sobre lo que necesitas?';
   }
   
   // Función para manejar Enter
@@ -273,10 +273,10 @@
       <div class="flex flex-wrap gap-2">
         {#each [
           '¿Cómo usar UIZARD para prototipos?',
-          '¿Qué es MAKE y automatizaciones?',
+          '¿Qué es Claude y cómo usarlo?',
           'Consejos para Climathons de ClimateTech',
-          '¿Cómo crear apps con Lovable?',
-          '¿Qué es Cursor IA?',
+          '¿Cómo crear presentaciones con Gamma?',
+          '¿Cómo comenzar mi Climathon?',
           '¿Cómo crear diagramas con Whimsical?',
           'Herramientas del toolkit'
         ] as suggestion}
