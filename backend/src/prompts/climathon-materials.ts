@@ -15,18 +15,25 @@ MATERIALES DISPONIBLES PARA PARTICIPANTES DE CLIMATHONES:
 - **Design Thinking Tools**: https://climatekic.notion.site/CATAL1-5-T-Climathons-a5a72156137f4419867cf2de499a802a - Herramientas de design thinking para climathones
 - **Herramientas de Ideación Online**: https://www.boardofinnovation.com/staff_picks/our-favorite-ideation-tools/ - Nuestras herramientas favoritas para ideación
 
-## 3. PITCH TRAINING:
+## 3. DESIGN THINKING:
+- **Circular Idea Pitch**: http://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/7872a96e-c182-4fed-b27d-60cf02cb6d66/Circular_idea_pitch.pdf?table=block&id=f8817fc7-bf53-4104-888f-9088a7bdd197&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=jn1LGuzcfSImrnquT1-WRS05VSIg-0OW747EtVl9EPI&downloadName=Circular+idea+pitch.pdf - Plantilla para presentar ideas de economía circular en Climathons
+- **Circularity Deck**: https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/bde8110a-3885-4638-a830-a34fc707d758/Circularity_Deck.pdf?table=block&id=a32f81d4-c930-4bc2-9196-0a4a266075e4&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=olvgFNji-VWe91Daf4qwc1H_p_5XkUk1IWZuJRRI0lA&downloadName=Circularity+Deck.pdf - Mazo de cartas con principios de economía circular para diseñar soluciones sostenibles
+- **The Ecosystem View**: https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/65ba35b8-cbd4-4ec9-abe3-0a1a84152846/The_ecosystem_view.pdf?table=block&id=a8789f3b-29ce-4b62-923a-e2d0caf7042d&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=7XQxgc32DeI-EmWhmx5xKJCtZODYgqujxoRvtcynHPo&downloadName=The+ecosystem+view.pdf - Marco para analizar ecosistemas y diseñar soluciones sistémicas
+- **Business Model Canvas**: http://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/8f5e7583-ee50-4684-b22d-260f8307aab4/the-business-model-canvas-1.pdf?table=block&id=25b47a96-553b-432a-ac87-9b6a72e97b45&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=625wDthDwt2GZkDTdP-aOfHW06VWBRNTV4xd0aseds8&downloadName=the-business-model-canvas-1.pdf - Plantilla para diseñar modelos de negocio sostenibles y circulares
+- **Value Proposition Canvas**: https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/35e98c5a-ed00-4f82-810d-1dde1be7ecd0/the-value-proposition-canvas-1.pdf?table=block&id=6f599da6-5cb6-4fb0-a537-077535b79cce&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=sG1MWoPqJJPeMFd1EAv8ryDbXKWjM-LBX6NS6U00vi4&downloadName=the-value-proposition-canvas-1.pdf - Herramienta para definir y validar la propuesta de valor de tu solución climática
+
+## 4. PITCH TRAINING:
 - **Slides Impact Pitch**: https://docs.google.com/presentation/d/17YP7SU8lARsbgP_Sbmz34lWeuAvC9WEf/edit?usp=sharing&ouid=103815518341617694684&rtpof=true&sd=true - Plantilla de presentación para pitch de impacto
 - **Grabación Explicación Impact Pitch**: https://drive.google.com/file/d/1zK3AON5xgl6iWngsa2bEVlV0MZBlRmIQ/view?usp=drive_link - Video explicativo sobre cómo hacer un pitch de impacto efectivo
 
-## 4. HERRAMIENTAS DE IA DISPONIBLES:
+## 5. HERRAMIENTAS DE IA DISPONIBLES:
 - **COMO COMENZAR - Guía Inicial**: Guía paso a paso para iniciar tu proyecto Climathon desde cero
 - **WHIMSICAL - Diseño y Planificación**: https://whimsical.com - Crea diagramas, wireframes y mapas mentales de forma colaborativa
 - **UIZARD - Prototipado**: https://uizard.io - Crea prototipos rápidos y completos de UI para apps web y móviles
 - **CLAUDE - Inteligencia Artificial**: https://claude.ai - Asistente de IA para investigación, análisis y creación de contenido
 - **GAMMA - Presentaciones**: https://gamma.app - Crea presentaciones profesionales y documentos con IA de forma rápida y eficiente
 
-## 5. INNOVACIÓN DE SISTEMAS Y PERSPECTIVA HOLÍSTICA:
+## 6. INNOVACIÓN DE SISTEMAS Y PERSPECTIVA HOLÍSTICA:
 - **Presentación IAR3EES - Innovación del Sistema**: Material desarrollado por EIT Climate-KIC basado en el Future-Fit Business Benchmark
 - **Licencia**: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
 - **Autores**: Yasmina Choueiri, María Agrelo y Beñat Egaña (Octubre 2023)
@@ -94,7 +101,7 @@ MATERIALES DISPONIBLES PARA PARTICIPANTES DE CLIMATHONES:
   - **Elkington, John** (1998): *Cannibals with forks: Triple bottom line of 21st century business*. Gabriola, BC: New Society Publishers, pág. 407.
   - **Meadows, Donella** (2009): *Thinking in systems: A primer*. Londres: Earthscan, pág. 235. Traducción: (Trad. Jaime Blasco) 2022. 'Pensar en sistemas: Un manual de iniciación'. Ed. Capitán Swing Libros.
 
-## 6. RECURSOS ADICIONALES:
+## 7. RECURSOS ADICIONALES:
 - **Tutoriales en video**: Disponibles en la sección de herramientas
 - **Guías paso a paso**: Para cada herramienta de IA
 - **Casos de uso**: Ejemplos específicos para climathones
