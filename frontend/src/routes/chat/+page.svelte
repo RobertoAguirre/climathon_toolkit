@@ -245,7 +245,15 @@ HERRAMIENTAS DISPONIBLES:
               {/if}
               
               <div class="chat-message {message.role}">
-                <p class="text-sm leading-relaxed whitespace-pre-line">{message.content}</p>
+                <div class="text-sm leading-relaxed">
+                  {#each message.content.split('\n') as line}
+                    {#if line.trim() === ''}
+                      <br>
+                    {:else}
+                      <p class="mb-1">{line}</p>
+                    {/if}
+                  {/each}
+                </div>
                 <p class="text-xs opacity-70 mt-2">
                   {message.timestamp.toLocaleTimeString()}
                 </p>
