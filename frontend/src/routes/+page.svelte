@@ -90,7 +90,7 @@
         title: 'Tutorial Claude para Climathons',
         duration: '12 min',
         description: 'Aprende a usar Claude para investigación y análisis',
-        videoId: 'dQw4w9WgXcQ'
+        videoId: 'sW8fyQbqtP8'
       },
       useCase: 'Excelente para investigación rápida, análisis de datos y generación de contenido para tu proyecto.',
       difficulty: 'Fácil',

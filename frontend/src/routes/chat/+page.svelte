@@ -13,36 +13,40 @@
   let messages: ChatMessage[] = [
     {
       id: '1',
-      content: `¡Hola! 👋 Bienvenido/a al asistente del **Climathon Toolkit**. Estoy aquí para ayudarte con:
+      content: `¡Hola! Bienvenido/a al asistente del Climathon Toolkit. Estoy aquí para ayudarte con:
 
-## 🚀 **RECURSOS PRINCIPALES:**
+RECURSOS PRINCIPALES:
+
 • Materiales de aprendizaje especializados
 • Herramientas de IA para tu proyecto
 • Guías paso a paso para Climathons
 • Consejos prácticos de expertos
 
-## 🎯 **ÁREAS DE APOYO:**
+ÁREAS DE APOYO:
+
 • Desarrollo de ideas climáticas
 • Creación de prototipos y MVPs
 • Preparación de pitch efectivo
 • Innovación sistémica y holística
 • Emprendimiento climático
 
-## 🛠️ **HERRAMIENTAS DISPONIBLES:**
-• **Como Comenzar** - Guía inicial paso a paso
-• **Whimsical** - Diseño y planificación visual
-• **UIZARD** - Prototipado rápido de UI
-• **Claude** - Investigación y análisis con IA
-• **Gamma** - Presentaciones profesionales
+HERRAMIENTAS DISPONIBLES:
+
+• Como Comenzar - Guía inicial paso a paso
+• Whimsical - Diseño y planificación visual
+• UIZARD - Prototipado rápido de UI
+• Claude - Investigación y análisis con IA
+• Gamma - Presentaciones profesionales
 
 ¿En qué área específica te gustaría enfocarte? Puedes preguntarme:
+
 • ¿Cómo empezar en un Climathon?
 • ¿Qué herramientas usar para tu proyecto?
 • ¿Cómo preparar tu pitch?
 • ¿Cómo aplicar pensamiento sistémico?
 • ¿Dónde encontrar recursos específicos?
 
-¡Dime cómo puedo ayudarte! 🌱`,
+¡Dime cómo puedo ayudarte!`,
       role: 'assistant',
       timestamp: new Date()
     }
@@ -241,7 +245,7 @@
               {/if}
               
               <div class="chat-message {message.role}">
-                <p class="text-sm leading-relaxed">{message.content}</p>
+                <p class="text-sm leading-relaxed whitespace-pre-line">{message.content}</p>
                 <p class="text-xs opacity-70 mt-2">
                   {message.timestamp.toLocaleTimeString()}
                 </p>
