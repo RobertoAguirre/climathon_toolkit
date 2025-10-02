@@ -75,12 +75,6 @@
           url: 'https://drive.google.com/file/d/1JbZrJLDn2mIoWUoAwvtG0AduwcmUg7Uo/view'
         },
         {
-          title: 'Design Thinking Tools',
-          description: 'Herramientas de design thinking para Climathons',
-          type: 'Website',
-          url: 'https://climatekic.notion.site/CATAL1-5-T-Climathons-a5a72156137f4419867cf2de499a802a'
-        },
-        {
           title: 'Herramientas de Ideación Online',
           description: 'Nuestras herramientas favoritas para ideación',
           type: 'Website',
