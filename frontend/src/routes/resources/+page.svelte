@@ -103,31 +103,31 @@
           title: 'Circular Idea Pitch',
           description: 'Plantilla para presentar ideas de economía circular en Climathons',
           type: 'PDF',
-          url: 'http://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/7872a96e-c182-4fed-b27d-60cf02cb6d66/Circular_idea_pitch.pdf?table=block&id=f8817fc7-bf53-4104-888f-9088a7bdd197&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=jn1LGuzcfSImrnquT1-WRS05VSIg-0OW747EtVl9EPI&downloadName=Circular+idea+pitch.pdf'
+          url: '/Circular_idea_pitch.pdf'
         },
         {
           title: 'Circularity Deck',
           description: 'Mazo de cartas con principios de economía circular para diseñar soluciones sostenibles',
           type: 'PDF',
-          url: 'https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/bde8110a-3885-4638-a830-a34fc707d758/Circularity_Deck.pdf?table=block&id=a32f81d4-c930-4bc2-9196-0a4a266075e4&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=olvgFNji-VWe91Daf4qwc1H_p_5XkUk1IWZuJRRI0lA&downloadName=Circularity+Deck.pdf'
+          url: '/Circularity_Deck.pdf'
         },
         {
           title: 'The Ecosystem View',
           description: 'Marco para analizar ecosistemas y diseñar soluciones sistémicas',
           type: 'PDF',
-          url: 'https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/65ba35b8-cbd4-4ec9-abe3-0a1a84152846/The_ecosystem_view.pdf?table=block&id=a8789f3b-29ce-4b62-923a-e2d0caf7042d&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=7XQxgc32DeI-EmWhmx5xKJCtZODYgqujxoRvtcynHPo&downloadName=The+ecosystem+view.pdf'
+          url: '/The_ecosystem_view.pdf'
         },
         {
           title: 'Business Model Canvas',
           description: 'Plantilla para diseñar modelos de negocio sostenibles y circulares',
           type: 'PDF',
-          url: 'http://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/8f5e7583-ee50-4684-b22d-260f8307aab4/the-business-model-canvas-1.pdf?table=block&id=25b47a96-553b-432a-ac87-9b6a72e97b45&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=625wDthDwt2GZkDTdP-aOfHW06VWBRNTV4xd0aseds8&downloadName=the-business-model-canvas-1.pdf'
+          url: '/the-business-model-canvas-1.pdf'
         },
         {
           title: 'Value Proposition Canvas',
           description: 'Herramienta para definir y validar la propuesta de valor de tu solución climática',
           type: 'PDF',
-          url: 'https://file.notion.so/f/f/dee315ea-7965-4f66-8917-15d3ec94b3e1/35e98c5a-ed00-4f82-810d-1dde1be7ecd0/the-value-proposition-canvas-1.pdf?table=block&id=6f599da6-5cb6-4fb0-a537-077535b79cce&spaceId=dee315ea-7965-4f66-8917-15d3ec94b3e1&expirationTimestamp=1759125600000&signature=sG1MWoPqJJPeMFd1EAv8ryDbXKWjM-LBX6NS6U00vi4&downloadName=the-value-proposition-canvas-1.pdf'
+          url: '/the-value-proposition-canvas-1.pdf'
         }
       ]
     },
