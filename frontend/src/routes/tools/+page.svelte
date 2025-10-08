@@ -18,7 +18,7 @@
       ],
       tutorial: {
         title: 'Guía de Inicio',
-        duration: 'Próximamente',
+        duration: '5 min',
         description: 'Video tutorial para comenzar tu proyecto Climathon',
         videoId: '7VjoH1WFgjw'
       },
@@ -41,7 +41,7 @@
       ],
       tutorial: {
         title: 'Tutorial Whimsical para Climathons',
-        duration: '20 min',
+        duration: '12 min',
         description: 'Aprende a crear diagramas y wireframes colaborativos',
         videoId: 'a5wBQQzFYKs'
       },

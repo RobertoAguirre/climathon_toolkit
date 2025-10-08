@@ -57,7 +57,7 @@
       color: 'bg-light-green',
       items: [
         {
-          title: 'Climate 101 - Fundamentos',
+          title: 'Fundamentos del cambio climático',
           description: 'Presentación sobre los fundamentos del cambio climático',
           type: 'Google Slides',
           url: 'https://docs.google.com/presentation/d/1Ig-vQkmi1nXULhv2FMIg7Ulm6DXP5K9Q/edit?slide=id.p1#slide=id.p1'
@@ -81,7 +81,7 @@
           url: 'https://www.boardofinnovation.com/staff_picks/our-favorite-ideation-tools/'
         },
         {
-          title: 'IAR3EES System Innovation',
+          title: 'Módulo de Innovación del Sistémica',
           description: 'Presentación sobre innovación sistémica para soluciones climáticas',
           type: 'Google Slides',
           url: 'https://docs.google.com/presentation/d/1ozH906HRU2EtSAsYw_fnqPQg7DFwujHM/edit?slide=id.p35&pli=1#slide=id.p35'
@@ -303,7 +303,7 @@
         </button>
         <button 
           class="btn-secondary flex items-center justify-center"
-          on:click={() => alert('Contacto: info@climathon-toolkit.org')}
+          on:click={() => alert('Contacto: contacto@changeandcode.com')}
         >
           <ExternalLink class="mr-2" size={20} />
           Contactar Soporte

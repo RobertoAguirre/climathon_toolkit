@@ -19,7 +19,7 @@
       ],
       tutorial: {
         title: 'Guía de Inicio',
-        duration: 'Próximamente',
+        duration: '5 min',
         description: 'Video tutorial para comenzar tu proyecto Climathon',
         videoId: '7VjoH1WFgjw'
       },
@@ -42,7 +42,7 @@
       ],
       tutorial: {
         title: 'Tutorial Whimsical para Climathons',
-        duration: '20 min',
+        duration: '12 min',
         description: 'Aprende a crear diagramas y wireframes colaborativos',
         videoId: 'a5wBQQzFYKs'
       },
@@ -65,7 +65,7 @@
       ],
       tutorial: {
         title: 'Tutorial UIZARD para Climathons',
-        duration: '15 min',
+        duration: '20 min',
         description: 'Aprende a crear prototipos profesionales en minutos',
         videoId: 'wHYcHmcTP0I'
       },
@@ -88,7 +88,7 @@
       ],
       tutorial: {
         title: 'Tutorial Claude para Climathons',
-        duration: '12 min',
+        duration: '22 min',
         description: 'Aprende a usar Claude para investigación y análisis',
         videoId: 'sW8fyQbqtP8'
       },
@@ -111,7 +111,7 @@
       ],
       tutorial: {
         title: 'Tutorial Gamma para Climathons',
-        duration: '18 min',
+        duration: '17 min',
         description: 'Aprende a crear presentaciones impactantes para tu pitch',
         videoId: '4tsm2Hg6WaQ'
       },
